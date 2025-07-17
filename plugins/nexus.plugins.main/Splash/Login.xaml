@@ -1,0 +1,40 @@
+﻿<my:NxGroupBase 
+
+    x:Class="nexus.plugins.main.Login" 
+    
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml" 
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+    xmlns:my="using:nexus.common.control"     
+    
+    Height="378" Width="630" Background="{x:Null}" mc:Ignorable="d"  >
+
+    <Grid HorizontalAlignment="Left" VerticalAlignment="Top" Margin="0" Background="#59000000" Height="378">
+        <my:NxTextEdit x:Name="txUsername" HorizontalAlignment="Left" Height="40" PromptTextWrapping="Wrap" VerticalAlignment="Top" Width="416" Margin="10,17,0,0" Prompt="Username" ReplyFontSize="18" Value="" ChangeEventType="OnEnterKey" SuppressNavigate="True" />
+        <my:NxTextEdit x:Name="txPassword" HorizontalAlignment="Left" Height="40" PromptTextWrapping="Wrap" VerticalAlignment="Top" Width="416" Margin="10,60,0,0" Prompt="Password" ReplyFontSize="18" Value="" ChangeEventType="OnEnterKey" SuppressNavigate="True" MaskType="Password" />
+
+        <my:NxButton x:Name="btLogin" Margin="99,107,307,231" Prompt="Login" BorderType="OK"/>
+        <my:NxButton x:Name="btCancel" Margin="317,107,193,231" BorderType="Cancel" Prompt="Cancel"/>
+
+        <Image x:Name="imgNextNet" HorizontalAlignment="Left" Height="121" VerticalAlignment="Top" Width="184" Margin="433,20,0,0" Source="ms-appx:///Assets/NextNet.png" Opacity="1"/>
+        <Image x:Name="imgIG" HorizontalAlignment="Left" Height="137" VerticalAlignment="Top" Width="163" Source="ms-appx:///Assets/graphic.png" Margin="456,10,0,0" RenderTransformOrigin="0.5,0.5">
+            <Image.RenderTransform>
+                <TransformGroup>
+                    <ScaleTransform/>
+                    <SkewTransform/>
+                    <RotateTransform/>
+                    <TranslateTransform/>
+                </TransformGroup>
+            </Image.RenderTransform>
+        </Image>
+
+        <Grid x:Name="lbBad" Margin="0" Background="Red" Visibility="Collapsed"   >
+            <my:NxLabel  HorizontalAlignment="Left" Height="113" VerticalAlignment="Top" Width="369" Margin="10,10,0,0" PromptFontSize="38" PromptHorizontalAlignment="Center" PromptVerticalAlignment="Center" Prompt="Username or Password wrong" PromptTextWrapping="WrapWholeWords"/>
+            <my:NxLabel x:Name="lbTries" HorizontalAlignment="Left" Height="43" VerticalAlignment="Top" Width="369" Margin="10,138,0,0"  PromptFontSize="38" PromptHorizontalAlignment="Center" PromptVerticalAlignment="Center" Prompt="" PromptTextWrapping="WrapWholeWords"/>
+        </Grid>
+        <my:NxCheck x:Name="ckRemember" Prompt="Remember me?" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="313,155,0,0" Width="120" />
+
+    </Grid>
+
+</my:NxGroupBase>

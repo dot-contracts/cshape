@@ -1,0 +1,14 @@
+F:\GitHub\nexus\Source\shared\nexus.shared.members\obj\Debug\net9.0\nexus.shared.members.csproj.AssemblyReference.cache
+F:\GitHub\nexus\Source\shared\nexus.shared.members\obj\Debug\net9.0\UnoImage.stamp
+F:\GitHub\nexus\Source\shared\nexus.shared.members\obj\Debug\net9.0\nexus.shared.members.d-bfalse.GeneratedMSBuildEditorConfig.editorconfig
+F:\GitHub\nexus\Source\shared\nexus.shared.members\obj\Debug\net9.0\nexus.shared.members.AssemblyInfoInputs.cache
+F:\GitHub\nexus\Source\shared\nexus.shared.members\obj\Debug\net9.0\nexus.shared.members.AssemblyInfo.cs
+F:\GitHub\nexus\Source\shared\nexus.shared.members\obj\Debug\net9.0\nexus.shared.members.csproj.CoreCompileInputs.cache
+F:\GitHub\nexus\Source\shared\nexus.shared.members\obj\Debug\net9.0\nexus.shared.members.sourcelink.json
+E:\Projects\update\Source\shared\nexus.shared.members\obj\Debug\net9.0\nexus.shared.members.csproj.AssemblyReference.cache
+E:\Projects\update\Source\shared\nexus.shared.members\obj\Debug\net9.0\UnoImage.stamp
+E:\Projects\update\Source\shared\nexus.shared.members\obj\Debug\net9.0\nexus.shared.members.d-bfalse.GeneratedMSBuildEditorConfig.editorconfig
+E:\Projects\update\Source\shared\nexus.shared.members\obj\Debug\net9.0\nexus.shared.members.AssemblyInfoInputs.cache
+E:\Projects\update\Source\shared\nexus.shared.members\obj\Debug\net9.0\nexus.shared.members.AssemblyInfo.cs
+E:\Projects\update\Source\shared\nexus.shared.members\obj\Debug\net9.0\nexus.shared.members.csproj.CoreCompileInputs.cache
+E:\Projects\update\Source\shared\nexus.shared.members\obj\Debug\net9.0\nexus.shared.members.sourcelink.json

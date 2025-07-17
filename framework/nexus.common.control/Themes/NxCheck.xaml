@@ -1,0 +1,65 @@
+﻿<ResourceDictionary 
+    
+   xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+   xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+
+   xmlns:local="using:nexus.common.control"   >
+
+    <Style TargetType="local:NxCheck">
+        <Setter Property="BorderBrush" Value="LightGray"/>
+        <Setter Property="HorizontalAlignment" Value="Left"/>
+        <Setter Property="VerticalAlignment" Value="Center"/>
+        <Setter Property="Padding" Value="0,0,0,0"/>
+        <Setter Property="Prompt"                     Value=""/>
+        <Setter Property="PromptHorizontalAlignment"  Value="Left"/>
+        <Setter Property="PromptVerticalAlignment"    Value="Center"/>
+        <Setter Property="PromptFontFamily"           Value="Arial"/>
+        <Setter Property="PromptFontSize"             Value="12"/>
+
+        <Setter Property="PictureVerticalAlignment"    Value="Bottom"/>
+        <Setter Property="PictureHorizontalAlignment"  Value="Right"/>
+        <Setter Property="PictureWidth"                Value="25"/>
+        <Setter Property="PictureHeight"               Value="25"/>
+        <Setter Property="PictureTrue"                 Value="tick"/>
+        <Setter Property="PictureFalse"                Value="cross"/>
+        <Setter Property="IsReadOnly"                  Value="False"/>
+
+        <Setter Property="Template">
+            <Setter.Value>
+                <ControlTemplate TargetType="local:NxCheck">
+
+                        
+                    <Border x:Name="OuterBorder" 
+                                BorderBrush     = "{TemplateBinding BorderBrush}"
+                                CornerRadius    ="0"
+                                BorderThickness ="0"
+                                Padding         ="0"
+                            >
+
+                        <StackPanel Orientation="Horizontal">
+
+                            <local:NxImage x:Name="button"
+                                           Picture     ="{TemplateBinding PictureTrue}"  
+                                           ImageWidth  ="{TemplateBinding PictureWidth}"
+                                           ImageHeight ="{TemplateBinding PictureHeight}"
+                                           />
+
+                            <local:NxLabel x:Name="label"
+                                           PromptHorizontalAlignment ="{TemplateBinding PromptHorizontalAlignment}"
+                                           PromptVerticalAlignment   ="{TemplateBinding PromptVerticalAlignment}"
+                                           Prompt                    ="{TemplateBinding Prompt}"                               
+                                           PromptFontFamily          ="{TemplateBinding PromptFontFamily}"
+                                           PromptFontSize            ="{TemplateBinding PromptFontSize}"
+                                           />
+
+                        </StackPanel>
+
+                    </Border>
+
+                </ControlTemplate>
+            </Setter.Value>
+
+        </Setter>
+
+    </Style>
+</ResourceDictionary>

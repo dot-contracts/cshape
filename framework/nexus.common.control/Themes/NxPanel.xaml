@@ -1,0 +1,13 @@
+﻿<ResourceDictionary
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:nexus.common.control">
+
+    <Style TargetType="local:NxPanel">
+        <!--<Setter Property="Background" Value="{ThemeResource NxBackground}" />
+        <Setter Property="BorderBrush" Value="{ThemeResource NxBorderBrush}" />
+        <Setter Property="BorderThickness" Value="1" />
+        <Setter Property="Padding" Value="8" />-->
+    </Style>
+    
+</ResourceDictionary>

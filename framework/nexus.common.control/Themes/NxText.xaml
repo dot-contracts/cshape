@@ -1,0 +1,62 @@
+﻿<ResourceDictionary 
+    
+   
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+
+    xmlns:local="using:nexus.common.control"
+    
+    >
+
+    <Style TargetType="local:NxText" >
+
+        <Setter Property="ReplyFontFamily"           Value="Arial"/>
+        <Setter Property="ReplyFontSize"             Value="12"/>
+        <Setter Property="ReplyRequiredText"         Value=""/>
+        <Setter Property="MaskType"                  Value="None"/>
+        <Setter Property="ChangeEventType"           Value="OnLostFocus"/>
+        <Setter Property="ReplyHorizontalAlignment"  Value="Left"/>
+        <Setter Property="ReplyVerticalAlignment"    Value="Center"/>
+        <Setter Property="IsReadOnly"                Value="False"/>
+        <Setter Property="ReplyTextWrapping"         Value="NoWrap"/>
+        <Setter Property="ReplyMaxFontSize"          Value="22"  />
+        <Setter Property="Value"                     Value=""  />
+
+        <Setter Property="Template">
+            <Setter.Value>
+
+                <ControlTemplate TargetType="local:NxText">
+                    <Grid x:Name="Root"  Background="Transparent" MinHeight="0" >
+
+                            <TextBox x:Name="Editor"
+                                 MinHeight="20"
+                                 Padding ="0"
+                                 BorderThickness="1"
+                                     
+                                 HorizontalContentAlignment ="{TemplateBinding ReplyHorizontalAlignment}"
+                                 VerticalContentAlignment   ="{TemplateBinding ReplyVerticalAlignment}"                                     
+                                     
+                                 FontFamily="{TemplateBinding ReplyFontFamily}"
+                                 FontSize="{TemplateBinding ReplyFontSize}"
+                                 MaxLength="{TemplateBinding MaxTextLength}"
+                                 Text="{TemplateBinding Value}"
+                                 TextWrapping="{TemplateBinding ReplyTextWrapping}"
+                                 IsReadOnly="{TemplateBinding IsReadOnly}"
+                                 Background="{TemplateBinding Background}"
+                                 Foreground="{TemplateBinding Foreground}" />
+
+                    </Grid>
+                </ControlTemplate>
+
+                <!--<Viewbox Stretch="Fill" >
+                </Viewbox>-->
+
+
+
+            </Setter.Value>
+        </Setter>
+    </Style>
+
+</ResourceDictionary>
+
+<!--Text="{Binding RelativeSource={RelativeSource Mode=FindAncestor, AncestorType={x:Type local:NxText}}, Path=Value, UpdateSourceTrigger=PropertyChanged}"-->    

@@ -1,0 +1,406 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>nexus.common.dto</name>
+    </assembly>
+    <members>
+        <member name="M:nexus.common.cache.DenoteCache.Create">
+            <summary>
+            Populates the mDenoteTable with a list of Denotes from the Denote table in the database.
+            </summary>
+        </member>
+        <member name="M:nexus.common.cache.OptionCache.Create">
+            <summary>
+            Populates the mOptionTable with a list of Options from the Option table in the database.
+            </summary>
+        </member>
+        <member name="T:nexus.common.dto.Resource">
+            <summary>
+            Android Resource Designer class.
+            Exposes the Android Resource designer assembly into the project Namespace.
+            </summary>
+        </member>
+        <member name="T:nexus.common.dto.GlobalStaticResources">
+            <summary>
+            Contains all the static resources defined for the application
+            </summary>
+        </member>
+        <member name="M:nexus.common.dal.dlBatch.Open(System.String,System.String,System.String)">
+            <summary>
+            Load values from database.
+            </summary>
+            <param name="targetId">The Primary Key of the row to load values from.</param>
+            <returns>True if successful, else false.</returns>
+        </member>
+        <member name="M:nexus.common.dal.dlBatch.loadFromRow(System.Data.DataRow)">
+            <summary>
+            Populates the instance of this class with data from a DataRow.
+            </summary>
+            <param name="Row">A DataRow from the database table.</param>
+        </member>
+        <member name="M:nexus.common.dal.dlBatch.Update(System.String)">
+            <summary>
+            If mNewEntry is true, will attempt to insert a new row into the database, otherwise will attempt to update an existing row using the mBatchPK.
+            </summary>
+            <returns>Will return true if successful, else false.</returns>
+        </member>
+        <member name="M:nexus.common.dal.dlBatch.Delete">
+            <summary>
+            Sets the BatchAction state to 'Deleted'. BatchAction will still remain in the database.
+            </summary>
+            <returns>True if the state change was successful, else false.</returns>
+        </member>
+        <member name="M:nexus.common.dal.dlBatch.Reset">
+            <summary>
+            Set all member variables to default values.
+            </summary>
+        </member>
+        <member name="M:nexus.common.dal.dlCancel.Open(System.String)">
+            <summary>
+            Load values from database.
+            </summary>
+            <param name="targetId">The Primary Key of the row to load values from.</param>
+            <returns>True if successful, else false.</returns>
+        </member>
+        <member name="M:nexus.common.dal.dlCancel.loadFromRow(System.Data.DataRow)">
+            <summary>
+            Populates the instance of this class with data from a DataRow.
+            </summary>
+            <param name="Row">A DataRow from the database table.</param>
+        </member>
+        <member name="M:nexus.common.dal.dlCancel.Update">
+            <summary>
+            If mNewEntry is true, will attempt to insert a new row into the database, otherwise will attempt to update an existing row using the mCancelPK.
+            </summary>
+            <returns>Will return true if successful, else false.</returns>
+        </member>
+        <member name="M:nexus.common.dal.dlCancel.Reset">
+            <summary>
+            Set all Human variables to default values.
+            </summary>
+        </member>
+        <member name="M:nexus.common.dal.dlCashless.Open(System.String)">
+            <summary>
+            Load values from database.
+            </summary>
+            <param name="targetId">The Primary Key of the row to load values from.</param>
+            <returns>True if successful, else false.</returns>
+        </member>
+        <member name="M:nexus.common.dal.dlCashless.loadFromRow(System.Data.DataRow)">
+            <summary>
+            Populates the instance of this class with data from a DataRow.
+            </summary>
+            <param name="Row">A DataRow from the database table.</param>
+        </member>
+        <member name="M:nexus.common.dal.dlCashless.Update">
+            <summary>
+            If mNewEntry is true, will attempt to insert a new row into the database, otherwise will attempt to update an existing row using the mCashlessPK.
+            </summary>
+            <returns>Will return true if successful, else false.</returns>
+        </member>
+        <member name="M:nexus.common.dal.dlCashless.Delete">
+            <summary>
+            Sets the EventAction state to 'Deleted'. EventAction will still remain in the database.
+            </summary>
+            <returns>True if the state change was successful, else false.</returns>
+        </member>
+        <member name="M:nexus.common.dal.dlCashless.Reset">
+            <summary>
+            Set all Player variables to default values.
+            </summary>
+        </member>
+        <member name="M:nexus.common.dal.dlDocket.Reset">
+            <summary>
+            Set all Docket variables to default values.
+            </summary>
+        </member>
+        <member name="M:nexus.common.dal.dlLineitem.Open(System.String)">
+            <summary>
+            Load values from database.
+            </summary>
+            <param name="targetId">The Primary Key of the row to load values from.</param>
+            <returns>True if successful, else false.</returns>
+        </member>
+        <member name="M:nexus.common.dal.dlLineitem.loadFromRow(System.Data.DataRow)">
+            <summary>
+            Populates the instance of this class with data from a DataRow.
+            </summary>
+            <param name="Row">A DataRow from the database table.</param>
+        </member>
+        <member name="M:nexus.common.dal.dlLineitem.Update">
+            <summary>
+            If mNewEntry is true, will attempt to insert a new row into the database, otherwise will attempt to update an existing row using the mLineitemPK.
+            </summary>
+            <returns>Will return true if successful, else false.</returns>
+        </member>
+        <member name="M:nexus.common.dal.dlLineitem.Delete">
+            <summary>
+            Sets the EventAction state to 'Deleted'. EventAction will still remain in the database.
+            </summary>
+            <returns>True if the state change was successful, else false.</returns>
+        </member>
+        <member name="M:nexus.common.dal.dlPayment.Open(System.String)">
+            <summary>
+            Load values from database.
+            </summary>
+            <param name="targetId">The Primary Key of the row to load values from.</param>
+            <returns>True if successful, else false.</returns>
+        </member>
+        <member name="M:nexus.common.dal.dlPayment.loadFromRow(System.Data.DataRow)">
+            <summary>
+            Populates the instance of this class with data from a DataRow.
+            </summary>
+            <param name="Row">A DataRow from the database table.</param>
+        </member>
+        <member name="M:nexus.common.dal.dlEnumType.#ctor">
+            <summary>
+            Constructor.
+            </summary>
+        </member>
+        <member name="M:nexus.common.dal.dlEnumType.Open(System.Int32)">
+            <summary>
+            Create an SQL query for a row of the enum table and populate a DataTable if found.
+            </summary>
+            <param name="EnumPK">Primary Key (Unique) for SQL query.</param>
+            <returns>True if the class has been populated from an SQL query. False if no row with matching key found.</returns>
+                    
+        </member>
+        <member name="M:nexus.common.dal.dlEnumType.loadFromRow(System.Data.DataRow)">
+            <summary>
+            Populates the instance of this class with data from the SQL query performed by Open(string) method.
+            </summary>
+            <param name="Row">The row returned from the SQL query as above.</param>
+        </member>
+        <member name="M:nexus.common.dal.dlEnumType.Update">
+            <summary>
+            If the EnumType exists, the method will update the existing type. 
+            Else will create a new type.
+            </summary>
+            <returns>1 if update was a success. Else 0. Currently only works for updates.</returns>
+        </member>
+        <member name="M:nexus.common.dal.dlEnumType.getInsertSQL">
+            <summary>
+            SQL insert string to insert a new EnumType entry into the database.
+            </summary>
+            <returns>An SQL insert string.</returns>
+        </member>
+        <member name="M:nexus.common.dal.dlEnumType.getUpdateSQL">
+            <summary>
+            Called from Update()
+            Will return an SQL string update the values of a current EnumType.
+            </summary>
+            <returns>An SQL string which updates the values of a current EnumType.</returns>
+        </member>
+        <member name="M:nexus.common.dal.dlEnumType.getColumns">
+            <summary>
+            Will return an SQL string with variables which match class members to corrsponding database fields.
+            </summary>
+            <returns>An SQL string with the variables corrosponding to the database fields.</returns>
+        </member>
+        <member name="M:nexus.common.dal.dlEnumType.Reset">
+            <summary>
+            Sets all private members to default values.
+            </summary>
+            <param name="EnumType"></param>
+        </member>
+        <member name="M:nexus.common.dal.dlEnumValue.#ctor">
+            <summary>
+            Constructor.
+            </summary>
+        </member>
+        <member name="M:nexus.common.dal.dlEnumValue.Open(System.String,System.Int32)">
+            <summary>
+            Loads property from database by ValuePK into the current instance.
+            </summary>
+            <param name="ValuePK">The primary key for a row in the EnumValue table.</param>
+            <returns>true if successful load. false otherwise.</returns>
+        </member>
+        <member name="M:nexus.common.dal.dlEnumValue.LoadFromRow(System.Data.DataRow)">
+            <summary>
+            Populates members with data from a DataRow.
+            </summary>
+            <param name="Row">A DataRow from EnumValue table.</param>
+        </member>
+        <member name="M:nexus.common.dal.dlEnumValue.Update(System.String)">
+            <summary>
+            Will attempt to update row by value of mEnumID, else will attempt to create new row.
+            </summary>
+            <returns>1 if successful, else 0. Note: Only updates will return a correct return code.</returns>
+        </member>
+        <member name="M:nexus.common.dal.dlEnumValue.getInsertSQL(System.String)">
+            <summary>
+            SQL insert string to insert a new EnumValue entry into the database.
+            </summary>
+            <returns>An SQL insert string.</returns>
+        </member>
+        <member name="M:nexus.common.dal.dlEnumValue.getUpdateSQL(System.String)">
+            <summary>
+            Called from Update()
+            Will return an SQL string update the values of a current EnumValue.
+            </summary>
+            <returns>An SQL string which updates the values of a current EnumValue.</returns>
+        </member>
+        <member name="M:nexus.common.dal.dlEnumValue.getColumns">
+            <summary>
+            Will return an SQL string with variables which match class members to corrsponding database fields.
+            </summary>
+            <returns>An SQL string with the variables corrosponding to the database fields.</returns>
+        </member>
+        <member name="M:nexus.common.dal.dlEnumValue.Delete(System.String)">
+            <summary>
+            Sets the current record to a state of deleted
+            </summary>
+        </member>
+        <member name="M:nexus.common.dal.dlEnumValue.Reset(System.String)">
+            <summary>
+            Sets all private members to default values.
+            </summary>
+            <param name="EnumType"></param>        
+        </member>
+        <member name="M:nexus.common.dal.dlEvent.Open(System.String)">
+            <summary>
+            Load values from database.
+            </summary>
+            <param name="targetId">The Primary Key of the row to load values from.</param>
+            <returns>True if successful, else false.</returns>
+        </member>
+        <member name="M:nexus.common.dal.dlEvent.loadFromRow(System.Data.DataRow)">
+            <summary>
+            Populates the instance of this class with data from a DataRow.
+            </summary>
+            <param name="Row">A DataRow from the database table.</param>
+        </member>
+        <member name="M:nexus.common.dal.dlEvent.Update">
+            <summary>
+            If mNewEntry is true, will attempt to insert a new row into the database, otherwise will attempt to update an existing row using the mEventPK.
+            </summary>
+            <returns>Will return true if successful, else false.</returns>
+        </member>
+        <member name="M:nexus.common.dal.dlEvent.Delete">
+            <summary>
+            Sets the EventAction state to 'Deleted'. EventAction will still remain in the database.
+            </summary>
+            <returns>True if the state change was successful, else false.</returns>
+        </member>
+        <member name="M:nexus.common.dal.dlEvent.Reset">
+            <summary>
+            Set all member variables to default values.
+            </summary>
+        </member>
+        <member name="M:nexus.common.dal.dlEventAction.Open(System.String)">
+            <summary>
+            Load values from database.
+            </summary>
+            <param name="targetId">The Primary Key of the row to load values from.</param>
+            <returns>True if successful, else false.</returns>
+        </member>
+        <member name="M:nexus.common.dal.dlEventAction.loadFromRow(System.Data.DataRow)">
+            <summary>
+            Populates the member variables with values from a database row from a given DataRow.
+            </summary>
+            <param name="Row">A row from the database.</param>
+        </member>
+        <member name="M:nexus.common.dal.dlEventAction.Update">
+            <summary>
+            If mNewEntry is true, will attempt to insert a new row into the database, otherwise will attempt to update an existing row using the mActionPK.
+            </summary>
+            <returns>Will return true if successful, else false.</returns>
+        </member>
+        <member name="M:nexus.common.dal.dlEventAction.Reset">
+            <summary>
+            Set all member variables to default values.
+            </summary>
+        </member>
+        <member name="M:nexus.common.dal.dlEventAction.Delete">
+            <summary>
+            Sets the EventAction state to 'Deleted'. EventAction will still remain in the database.
+            </summary>
+            <returns>True if the state change was successful, else false.</returns>
+        </member>
+        <member name="M:nexus.common.dal.dlOption.#ctor">
+            <summary>
+            Default constructor.
+            </summary>
+        </member>
+        <member name="M:nexus.common.dal.dlOption.Delete">
+            <summary>
+            Sets the state of the current row as defined by OptionPK to the EnumCache EntityState "Deleted".
+            </summary>
+            <returns>True if successful, else false.</returns>
+        </member>
+        <member name="M:nexus.common.dal.dlOptionValue.#ctor">
+            <summary>
+            Default constructor - sets all member variables to default values.
+            </summary>
+        </member>
+        <member name="M:nexus.common.dal.dlOptionValue.Reset">
+            <summary>
+            Sets all member variables to default values.
+            </summary>
+        </member>
+        <member name="M:nexus.common.dal.dlOptionValue.LoadFromRow(System.Data.DataRow)">
+            <summary>
+            Populates the instance of this class with data from the SQL query performed by Open(string) method.
+            </summary>
+            <param name="Row">The row returned from the SQL query as above.</param>
+        </member>
+        <member name="M:nexus.common.dal.dlOptionValue.Update">
+            <summary>
+            If the OptionValue already exists, the method will Modified the existing row.
+            Else will create a new row in the database.
+            </summary>
+            <returns>1 if update was a success. Else 0. Currently only works for updates.</returns>
+        </member>
+        <member name="M:nexus.common.dal.dlOptionValue.Delete">
+            <summary>
+            
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:nexus.common.dal.dlOptionValue.getColumns">
+            <summary>
+            Gets and defines the SQL for variables to be entered into the database fields matching class members.
+            </summary>
+            <returns>SQL String with declarations matching class members.</returns>
+        </member>
+        <member name="M:nexus.common.dal.dlOptionValue.getModifiedSQL">
+            <summary>
+            Called from Update()
+            Will return an SQL string to update the values of a current OptionValue.
+            </summary>
+            <returns>An SQL string which updates the values of a current OptionValue.</returns>
+        </member>
+        <member name="M:nexus.common.dal.dlOptionValue.getInsertSQL">
+            <summary>
+            Get an SQL insert string to insert a new OptionValue entry into the database.
+            </summary>
+            <returns>An SQL insert string which inserts a new OptionValue into the database.</returns>
+        </member>
+        <member name="M:nexus.common.dal.dlOptionValue.loadOptionList">
+            <summary>
+            Creates a Datatable of all Options available.
+            </summary>
+            <returns>A Datatable with the fields [OptionPK] and [Defn]. Null if none exists.</returns>
+        </member>
+        <member name="M:nexus.common.dal.dlDevice.Update">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="M:nexus.common.dal.dlEgm_Game.Update">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="M:nexus.common.dal.dlEgm_Game_Varno.Update">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="M:nexus.common.dal.dlEgm_Game_Location.Update">
+            <summary>
+            
+            </summary>
+        </member>
+    </members>
+</doc>

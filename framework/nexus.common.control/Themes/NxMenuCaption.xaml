@@ -1,0 +1,60 @@
+﻿<ResourceDictionary
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:nexus.common.control">
+
+    <Style TargetType="local:NxMenuCaption">
+        <Setter Property="Background"                  Value="{ThemeResource NxMenuCaptionBack}" />
+        <Setter Property="BorderColor"                 Value="{ThemeResource NxBorder}" />
+        <Setter Property="BorderThickness"             Value="1" />
+        <Setter Property="BorderBrush"                 Value="{x:Null}" />
+
+        <Setter Property="Prompt"                      Value="Prompt" />
+        <Setter Property="PromptHorizontalAlignment"   Value="Left" />
+        <Setter Property="PromptVerticalAlignment"     Value="Top" />
+        <Setter Property="PromptFontFamily"            Value="Arial" />
+        <Setter Property="PromptFontSize"              Value="12" />
+        <Setter Property="PromptForeColor"             Value="{ThemeResource NxMenuCaptionFore}" />
+        <Setter Property="PromptBackColor"             Value="{x:Null}" />
+        <Setter Property="IsTabStop"                   Value="False" />
+        <Setter Property="PromptTextWrapping"          Value="NoWrap" />
+
+        <Setter Property="Template">
+            <Setter.Value>
+                <ControlTemplate TargetType="local:NxMenuCaption">
+                    <Grid x:Name="Root">
+                        <Border x:Name="outer"
+                                BorderThickness="{TemplateBinding BorderThickness}"
+                                CornerRadius="{TemplateBinding BorderRadius}"
+                                BorderBrush="{TemplateBinding BorderColor}"
+                                Background="{TemplateBinding Background}">
+
+                            <Border x:Name="inner"
+                                    BorderThickness="{TemplateBinding BorderThickness}"
+                                    CornerRadius="{TemplateBinding InnerBorderRadius}"
+                                    BorderBrush="{TemplateBinding BorderColor}" />
+                        </Border>
+
+                        <TextBox x:Name="label"
+                                 HorizontalContentAlignment="{TemplateBinding PromptHorizontalAlignment}"
+                                 VerticalContentAlignment="{TemplateBinding PromptVerticalAlignment}"
+                                 Text="{TemplateBinding Prompt}"
+                                 FontFamily="{TemplateBinding PromptFontFamily}"
+                                 FontSize="{TemplateBinding PromptFontSize}"
+                                 Foreground="{TemplateBinding PromptForeColor}"
+                                 Background="{TemplateBinding PromptBackColor}"
+                                 TabIndex="{TemplateBinding TabIndex}"
+                                 TextWrapping="{TemplateBinding PromptTextWrapping}"
+                                 BorderBrush="{TemplateBinding BorderBrush}"
+                                 IsReadOnly="True"
+                                 IsEnabled="False"
+                                 BorderThickness="0" />
+
+                        <local:NxImage x:Name="picture" Width="32" Visibility="Collapsed"  />
+
+                    </Grid>
+                </ControlTemplate>
+            </Setter.Value>
+        </Setter>
+    </Style>
+</ResourceDictionary>

@@ -1,0 +1,42 @@
+<controls:NxPanelBase
+    
+    x:Class="nexus.common.control.NxDialog"
+    
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+
+    xmlns:controls="using:nexus.common.control" >
+
+    <controls:NxPanelBase.Resources>
+        <Storyboard x:Name="FadeOutStoryboard">
+            <DoubleAnimation Storyboard.TargetProperty="Opacity" To="0" Duration="0:0:0.3"/>
+        </Storyboard>
+        <Storyboard x:Name="FadeInStoryboard">
+            <DoubleAnimation Storyboard.TargetProperty="Opacity" To="1" Duration="0:0:0.3"/>
+        </Storyboard>
+    </controls:NxPanelBase.Resources>
+
+    <Grid x:Name="RootGrid" Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="Auto"/>
+        </Grid.RowDefinitions>
+
+        <TextBlock x:Name="TitleText" FontSize="20" Margin="12" Text="Nx Dialog Wizard" />
+
+        <Grid x:Name="Container" Grid.Row="1" Margin="10"/>
+
+        <StackPanel x:Name="WizButtons" Grid.Row="2" Orientation="Horizontal" HorizontalAlignment="Right" Margin="10">
+            <controls:NxButton x:Name="btPrevious" Prompt="Previous"/>
+            <controls:NxButton x:Name="btNext"     Prompt="Next" Margin="5,0"/>
+            <controls:NxButton x:Name="btFinish"   Prompt="Finish"/>
+            <controls:NxButton x:Name="btCancel"   Prompt="Cancel" Margin="5,0"/>
+        </StackPanel>
+
+        <StackPanel x:Name="DlgButtons" Grid.Row="2" Orientation="Horizontal" HorizontalAlignment="Right" Margin="10">
+            <controls:NxButton x:Name="btOK" Prompt="OK"/>
+            <controls:NxButton x:Name="btClose" Prompt="Close" Margin="5,0"/>
+        </StackPanel>
+    </Grid>
+</controls:NxPanelBase>

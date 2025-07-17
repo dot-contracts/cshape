@@ -1,0 +1,83 @@
+﻿<Project Sdk="Microsoft.NET.Sdk.Web">
+
+	<PropertyGroup>
+		<TargetFramework>net9.0</TargetFramework>
+		<Nullable>enable</Nullable>
+		<ImplicitUsings>enable</ImplicitUsings>
+		<SelfContained>false</SelfContained>
+		<EnablePreviewFeatures>true</EnablePreviewFeatures>
+		<SuppressNETCoreSdkPreviewMessage>true</SuppressNETCoreSdkPreviewMessage>
+		<OutputType>Exe</OutputType>
+	</PropertyGroup>
+
+	<ItemGroup>
+		<Compile Remove="Cache\**" />
+		<Compile Remove="Pages\**" />
+		<Content Remove="Cache\**" />
+		<Content Remove="Pages\**" />
+		<Content Remove="appsettings*.json" />
+		<EmbeddedResource Remove="Cache\**" />
+		<EmbeddedResource Remove="Pages\**" />
+		<None Remove="Cache\**" />
+		<None Remove="Pages\**" />
+	</ItemGroup>
+
+	<ItemGroup>
+		<Compile Remove="Hubs\PluginsHub.cs" />
+		<Compile Remove="Models\Login.cs" />
+		<Compile Remove="Models\Register.cs" />
+		<Compile Remove="Models\Schedule.cs" />
+		<Compile Remove="WeatherForecast.cs" />
+	</ItemGroup>
+
+	<ItemGroup>
+		<Content Include="appsettings.json">
+		  <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+		</Content>
+	</ItemGroup>
+
+	<ItemGroup>
+		<PackageReference Include="Microsoft.AspNetCore.Authentication.JwtBearer" Version="9.0.4" />
+		<PackageReference Include="Microsoft.AspNetCore.Authorization" Version="9.0.4" />
+		<PackageReference Include="Microsoft.AspNetCore.Components" Version="9.0.4" />
+		<PackageReference Include="Microsoft.AspNetCore.Components.Forms" Version="9.0.4" />
+		<PackageReference Include="Microsoft.AspNetCore.Components.QuickGrid" Version="9.0.4" />
+		<PackageReference Include="Microsoft.EntityFrameworkCore" Version="9.0.4" />
+		<PackageReference Include="Microsoft.Identity.Client" Version="4.66.2" />
+		<PackageReference Include="Microsoft.SqlServer.Server" Version="1.0.0" />
+		<PackageReference Include="Newtonsoft.Json" Version="13.0.3" />
+		<PackageReference Include="Refit" Version="8.0.0" />
+		<PackageReference Include="Swashbuckle.AspNetCore.Swagger" Version="6.9.0" />
+		<PackageReference Include="Swashbuckle.AspNetCore.SwaggerGen" Version="6.9.0" />
+		<PackageReference Include="Swashbuckle.AspNetCore.SwaggerUI" Version="6.9.0" />
+		<PackageReference Include="Microsoft.Data.SqlClient" Version="6.0.2" />
+		<PackageReference Include="System.Formats.Asn1" Version="8.0.1" />
+		<PackageReference Include="System.IdentityModel.Tokens.Jwt" Version="8.2.0" />
+		<PackageReference Include="System.Management" Version="8.0.0" />
+		<PackageReference Include="System.Text.Json" Version="9.0.0-preview.4.24266.19" />
+		<PackageReference Include="WindowsBase_Core.STW" Version="4.0.30319.1" />
+		<PackageReference Include="Microsoft.AspNetCore.SignalR" Version="1.1.0" />
+	</ItemGroup>
+
+	<ItemGroup>
+		<ProjectReference Include="..\..\framework\nexus.common.dto\nexus.common.dto.csproj" />
+		<ProjectReference Include="..\..\framework\nexus.common\nexus.common.csproj" />
+		<ProjectReference Include="..\..\shared\nexus.shared.common\nexus.shared.common.csproj" />
+	</ItemGroup>
+
+	<ItemGroup>
+	  <Folder Include="Hubs\" />
+	  <Folder Include="Models\" />
+	  <Folder Include="classes\" />
+	</ItemGroup>
+
+	<PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|AnyCPU'">
+		<Optimize>False</Optimize>
+		<DebugType>embedded</DebugType>
+	</PropertyGroup>
+
+	<PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|AnyCPU'">
+		<DebugType>embedded</DebugType>
+	</PropertyGroup>
+
+</Project>

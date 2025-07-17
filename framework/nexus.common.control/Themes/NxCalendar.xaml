@@ -1,0 +1,36 @@
+<ResourceDictionary 
+    
+   
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+
+    xmlns:local="using:nexus.common.control"
+    
+    >
+
+        <Style TargetType="local:NxCalendar">
+            <Setter Property="Template">
+                <Setter.Value>
+                    <ControlTemplate TargetType="local:NxCalendar">
+                        <Border
+                            Background="{TemplateBinding Background}"
+                            BorderBrush="{TemplateBinding BorderBrush}"
+                            BorderThickness="{TemplateBinding BorderThickness}"
+                            CornerRadius="{TemplateBinding CornerRadius}"
+                            Padding="{TemplateBinding Padding}">
+
+                            <Grid>
+                                <CalendarView x:Name="PART_Calendar"
+                                              SelectionMode="Single"
+                                              HorizontalAlignment="Stretch"
+                                              VerticalAlignment="Stretch"
+                                       />
+                            </Grid>
+
+                        </Border>
+                    </ControlTemplate>
+                </Setter.Value>
+            </Setter>
+        </Style>
+
+</ResourceDictionary>

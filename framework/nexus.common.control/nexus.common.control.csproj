@@ -1,0 +1,160 @@
+﻿<Project Sdk="Uno.Sdk">
+	<PropertyGroup>
+		<TargetFramework>net9.0</TargetFramework>
+		<UnoSingleProject>true</UnoSingleProject>
+		<OutputType>Library</OutputType>
+		<!-- Ensures the .xr.xml files are generated in a proper layout folder -->
+		<GenerateLibraryLayout>true</GenerateLibraryLayout>
+		<ImplicitUsings>enable</ImplicitUsings>
+		<Nullable>enable</Nullable>
+
+		<!--
+      UnoFeatures let's you quickly add and manage implicit package references based on the features you want to use.
+      https://aka.platform.uno/singleproject-features
+    -->
+		<!--
+    <UnoFeatures></UnoFeatures>
+    -->
+	</PropertyGroup>
+
+	<ItemGroup>
+		<Compile Remove="base\nxShellBase.cs" />
+	</ItemGroup>
+
+	<ItemGroup>
+		<PackageReference Include="CommunityToolkit.Mvvm" Version="8.4.0" />
+		<PackageReference Include="Microsoft.AspNetCore.SignalR.Client" Version="9.0.6" />
+		<PackageReference Include="Newtonsoft.Json" Version="13.0.3" />
+	</ItemGroup>
+
+	<ItemGroup>
+	  <ProjectReference Include="..\..\shared\nexus.shared.common\nexus.shared.common.csproj" />
+	  <ProjectReference Include="..\nexus.common\nexus.common.csproj" />
+	</ItemGroup>
+
+
+	<ItemGroup>
+		<Page Update="Themes\NxLabel.xaml">
+			<Generator>MSBuild:Compile</Generator>
+		</Page>
+	</ItemGroup>
+
+
+	<ItemGroup>
+		<Page Update="Themes\NxDateEdit.xaml">
+			<Generator>MSBuild:Compile</Generator>
+		</Page>
+	</ItemGroup>
+
+
+	<ItemGroup>
+		<Page Update="Themes\NxList.xaml">
+			<Generator>MSBuild:Compile</Generator>
+		</Page>
+	</ItemGroup>
+
+
+	<ItemGroup>
+		<Page Update="Themes\NxMenu.xaml">
+			<Generator>MSBuild:Compile</Generator>
+		</Page>
+	</ItemGroup>
+
+
+	<ItemGroup>
+		<Page Update="Themes\NxButton.xaml">
+			<Generator>MSBuild:Compile</Generator>
+		</Page>
+	</ItemGroup>
+
+
+	<ItemGroup>
+		<Page Update="Themes\NxImage.xaml">
+			<Generator>MSBuild:Compile</Generator>
+		</Page>
+	</ItemGroup>
+
+
+	<ItemGroup>
+		<Page Update="Themes\NxCheck.xaml">
+			<Generator>MSBuild:Compile</Generator>
+		</Page>
+	</ItemGroup>
+
+
+	<ItemGroup>
+		<Page Update="Themes\NxComboEdit.xaml">
+			<Generator>MSBuild:Compile</Generator>
+		</Page>
+	</ItemGroup>
+
+
+	<ItemGroup>
+		<Page Update="Themes\Generic.xaml">
+			<Generator>MSBuild:Compile</Generator>
+		</Page>
+	</ItemGroup>
+
+
+	<ItemGroup>
+		<Page Update="Themes\dlgDate.xaml">
+			<Generator>MSBuild:Compile</Generator>
+		</Page>
+	</ItemGroup>
+
+
+	<ItemGroup>
+		<Page Update="Themes\NxPanel.xaml">
+			<Generator>MSBuild:Compile</Generator>
+		</Page>
+	</ItemGroup>
+
+
+	<ItemGroup>
+		<Page Update="Themes\NxPassword.xaml">
+			<Generator>MSBuild:Compile</Generator>
+		</Page>
+	</ItemGroup>
+
+
+	<ItemGroup>
+		<Page Update="Themes\NxCtlStrip.xaml">
+			<Generator>MSBuild:Compile</Generator>
+		</Page>
+	</ItemGroup>
+
+
+	<ItemGroup>
+		<Page Update="Themes\NxTabData.xaml">
+			<Generator>MSBuild:Compile</Generator>
+		</Page>
+	</ItemGroup>
+
+
+	<ItemGroup>
+	  <Page Update="Themes\NxMainUI.xaml">
+	    <Generator>MSBuild:Compile</Generator>
+	  </Page>
+	</ItemGroup>
+
+
+	<ItemGroup>
+	  <Folder Include="Forms\" />
+	</ItemGroup>
+
+
+	<ItemGroup>
+	  <Compile Update="Dialogs\NxMessageBox.xaml.cs">
+	    <DependentUpon>NxMessageBox.xaml</DependentUpon>
+	  </Compile>
+	</ItemGroup>
+
+
+	<ItemGroup>
+	  <Page Update="Dialogs\NxMessageBox.xaml">
+	    <Generator>MSBuild:Compile</Generator>
+	  </Page>
+	</ItemGroup>
+
+
+</Project>

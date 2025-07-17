@@ -1,0 +1,53 @@
+<Project Sdk="Uno.Sdk">
+  <PropertyGroup>
+    <TargetFrameworks>net9.0-android;net9.0-ios;net9.0-browserwasm;net9.0-desktop</TargetFrameworks>
+
+    <OutputType>Exe</OutputType>
+    <UnoSingleProject>true</UnoSingleProject>
+
+    <!-- Display name -->
+    <ApplicationTitle>nexus.plugins.test</ApplicationTitle>
+    <!-- App Identifier -->
+    <ApplicationId>com.companyname.nexus.plugins.test</ApplicationId>
+    <!-- Versions -->
+    <ApplicationDisplayVersion>1.0</ApplicationDisplayVersion>
+    <ApplicationVersion>1</ApplicationVersion>
+    <!-- Package Publisher -->
+    <ApplicationPublisher>davew</ApplicationPublisher>
+    <!-- Package Description -->
+    <Description>nexus.plugins.test powered by Uno Platform.</Description>
+
+    <!--
+      UnoFeatures let's you quickly add and manage implicit package references based on the features you want to use.
+      https://aka.platform.uno/singleproject-features
+    -->
+    <UnoFeatures>
+      Material;
+      Dsp;
+      Hosting;
+      Toolkit;
+      Logging;
+      MVUX;
+      Configuration;
+      HttpKiota;
+      Serialization;
+      Localization;
+      Navigation;
+      ThemeService;
+      SkiaRenderer;
+    </UnoFeatures>
+  </PropertyGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\..\..\framework\nexus.common.chart\nexus.common.chart.csproj" />
+    <ProjectReference Include="..\..\..\framework\nexus.common.control\nexus.common.control.csproj" />
+    <ProjectReference Include="..\..\..\framework\nexus.common\nexus.common.csproj" />
+    <ProjectReference Include="..\..\..\shared\nexus.shared.common\nexus.shared.common.csproj" />
+    <ProjectReference Include="..\..\..\shared\nexus.shared.gaming\nexus.shared.gaming.csproj" />
+  </ItemGroup>
+  <ItemGroup>
+    <Page Update="Presentation\MainUI.xaml">
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+  </ItemGroup>
+
+</Project>

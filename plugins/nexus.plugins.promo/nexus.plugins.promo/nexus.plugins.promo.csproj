@@ -1,0 +1,83 @@
+<Project Sdk="Uno.Sdk">
+  <PropertyGroup>
+    <TargetFrameworks>net9.0-browserwasm;net9.0-desktop</TargetFrameworks>
+
+    <OutputType>Exe</OutputType>
+    <UnoSingleProject>true</UnoSingleProject>
+
+    <!-- Display name -->
+    <ApplicationTitle>nexus.plugins.promo</ApplicationTitle>
+    <!-- App Identifier -->
+    <ApplicationId>com.companyname.nexus.plugins.promo</ApplicationId>
+    <!-- Versions -->
+    <ApplicationDisplayVersion>1.0</ApplicationDisplayVersion>
+    <ApplicationVersion>1</ApplicationVersion>
+    <!-- Package Publisher -->
+    <ApplicationPublisher>davew</ApplicationPublisher>
+    <!-- Package Description -->
+    <Description>nexus.plugins.promo powered by Uno Platform.</Description>
+
+    <!--
+      UnoFeatures let's you quickly add and manage implicit package references based on the features you want to use.
+      https://aka.platform.uno/singleproject-features
+    -->
+    <UnoFeatures>
+      Material;
+      Dsp;
+      Toolkit;
+      MVUX;
+      ThemeService;
+      SkiaRenderer;
+    </UnoFeatures>
+  </PropertyGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\..\..\framework\nexus.common.chart\nexus.common.chart.csproj" />
+    <ProjectReference Include="..\..\..\framework\nexus.common.control\nexus.common.control.csproj" />
+    <ProjectReference Include="..\..\..\framework\nexus.common\nexus.common.csproj" />
+    <ProjectReference Include="..\..\..\shared\nexus.shared.common\nexus.shared.common.csproj" />
+    <ProjectReference Include="..\..\..\shared\nexus.shared.promo\nexus.shared.promo.csproj" />
+    <ProjectReference Include="..\..\nexus.plugins.common\nexus.plugins.common.csproj" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Update="Panels\Game\Winner.xaml.cs">
+      <DependentUpon>Winner.xaml</DependentUpon>
+    </Compile>
+    <Compile Update="Panels\Game\Game.xaml.cs">
+      <DependentUpon>Game.xaml</DependentUpon>
+    </Compile>
+    <Compile Update="Panels\Game\Entry.xaml.cs">
+      <DependentUpon>Entry.xaml</DependentUpon>
+    </Compile>
+    <Compile Update="Panels\Game\GameDraw.xaml.cs">
+      <DependentUpon>GameDraw.xaml</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Page Update="Panels\Game\Game.xaml">
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+  </ItemGroup>
+  <ItemGroup>
+    <Page Update="Panels\Game\GameDraw.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+  </ItemGroup>
+  <ItemGroup>
+    <Page Update="Panels\Game\Winner.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Assets\ticket_bg.png">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </Content>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Update="Platforms\WebAssembly\wwwroot\ticket_bg.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+  </ItemGroup>
+
+</Project>

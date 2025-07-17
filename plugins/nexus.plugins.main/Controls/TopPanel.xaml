@@ -1,0 +1,20 @@
+﻿<my:NxControlBase 
+    
+    x:Class="nexus.plugins.main.TopPanel"
+    
+             
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+    
+    xmlns:my="using:nexus.common.control" 
+    
+    mc:Ignorable="d" d:DesignHeight="30" d:DesignWidth="677">
+    <Grid>
+        <StackPanel x:Name="Actions" Orientation="Horizontal" Height="30" VerticalAlignment="Top" FlowDirection="LeftToRight" Margin="0,0,79,0" />
+        <StackPanel x:Name="Tabs"   Orientation="Horizontal" Height="30" VerticalAlignment="Top" FlowDirection="RightToLeft"  Margin="0,0,79,0" />
+        <my:NxButton x:Name="btTools" VerticalAlignment="Top" Picture="edit" PictureVisible="True" Prompt="  Tools" HorizontalAlignment="Right" Width="79" PromptHorizontalAlignment="Left" PictureHeight="16" PictureWidth="16" Height="30"/>
+    </Grid>
+    
+</my:NxControlBase>

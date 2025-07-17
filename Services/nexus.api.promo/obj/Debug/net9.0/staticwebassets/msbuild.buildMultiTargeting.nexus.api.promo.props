@@ -1,0 +1,3 @@
+﻿<Project>
+  <Import Project="..\build\nexus.api.promo.props" />
+</Project>

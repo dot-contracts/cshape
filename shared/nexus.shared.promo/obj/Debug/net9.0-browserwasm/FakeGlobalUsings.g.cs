@@ -1,0 +1,16 @@
+namespace System { class __HotReloadWorkaround__nexus_shared_promo { } }
+namespace System.Collections.Generic { class __HotReloadWorkaround__nexus_shared_promo { } }
+namespace System.IO { class __HotReloadWorkaround__nexus_shared_promo { } }
+namespace System.Linq { class __HotReloadWorkaround__nexus_shared_promo { } }
+namespace System.Net.Http { class __HotReloadWorkaround__nexus_shared_promo { } }
+namespace System.Threading { class __HotReloadWorkaround__nexus_shared_promo { } }
+namespace System.Threading.Tasks { class __HotReloadWorkaround__nexus_shared_promo { } }
+namespace System.Windows.Input { class __HotReloadWorkaround__nexus_shared_promo { } }
+namespace Windows.Networking.Connectivity { class __HotReloadWorkaround__nexus_shared_promo { } }
+namespace Windows.Storage { class __HotReloadWorkaround__nexus_shared_promo { } }
+namespace Microsoft.UI.Xaml { class __HotReloadWorkaround__nexus_shared_promo { } }
+namespace Microsoft.UI.Xaml.Controls { class __HotReloadWorkaround__nexus_shared_promo { } }
+namespace Microsoft.UI.Xaml.Media { class __HotReloadWorkaround__nexus_shared_promo { } }
+namespace Microsoft.UI.Xaml.Navigation { class __HotReloadWorkaround__nexus_shared_promo { } }
+namespace Uno.UI { class __HotReloadWorkaround__nexus_shared_promo { } }
+namespace Windows.ApplicationModel { class __HotReloadWorkaround__nexus_shared_promo { } }

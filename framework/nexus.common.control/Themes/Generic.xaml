@@ -1,0 +1,29 @@
+﻿<ResourceDictionary xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+                    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+                    xmlns:local="using:nexus.common.control">
+
+    <ResourceDictionary.MergedDictionaries>
+        <!--<ResourceDictionary Source="/nexus.common.control;component/Themes/Colors.xaml"/>-->
+        <ResourceDictionary Source="ms-appx:///nexus.common.control/Themes/NxButton.xaml" />
+        <ResourceDictionary Source="ms-appx:///nexus.common.control/Themes/NxCalendar.xaml" />
+        <ResourceDictionary Source="ms-appx:///nexus.common.control/Themes/NxCheck.xaml" />
+        <ResourceDictionary Source="ms-appx:///nexus.common.control/Themes/NxCombo.xaml" />
+        <ResourceDictionary Source="ms-appx:///nexus.common.control/Themes/NxComboEdit.xaml" />
+        <ResourceDictionary Source="ms-appx:///nexus.common.control/Themes/NxDateEdit.xaml" />
+        <ResourceDictionary Source="ms-appx:///nexus.common.control/Themes/NxImage.xaml" />
+        <ResourceDictionary Source="ms-appx:///nexus.common.control/Themes/NxLabel.xaml" />
+        <ResourceDictionary Source="ms-appx:///nexus.common.control/Themes/NxList.xaml" />
+        <ResourceDictionary Source="ms-appx:///nexus.common.control/Themes/NxRadio.xaml" />
+        <ResourceDictionary Source="ms-appx:///nexus.common.control/Themes/NxText.xaml" />
+        <ResourceDictionary Source="ms-appx:///nexus.common.control/Themes/NxTextEdit.xaml" />
+        <ResourceDictionary Source="ms-appx:///nexus.common.control/Themes/NxTime.xaml" />
+        <ResourceDictionary Source="ms-appx:///nexus.common.control/Themes/NxMenu.xaml" />
+        <ResourceDictionary Source="ms-appx:///nexus.common.control/Themes/NxMenuGroup.xaml" />
+        <ResourceDictionary Source="ms-appx:///nexus.common.control/Themes/NxMenuCaption.xaml" />
+        <ResourceDictionary Source="ms-appx:///nexus.common.control/Themes/NxMenuItem.xaml" />
+        <ResourceDictionary Source="ms-appx:///nexus.common.control/Themes/NxPanel.xaml" />
+        <ResourceDictionary Source="ms-appx:///nexus.common.control/Themes/NxPlugInHost.xaml" />
+        <ResourceDictionary Source="ms-appx:///nexus.common.control/Themes/NxTabData.xaml" />
+        <ResourceDictionary Source="ms-appx:///nexus.common.control/Themes/NxCtlStrip.xaml" />
+    </ResourceDictionary.MergedDictionaries>
+</ResourceDictionary>

@@ -1,0 +1,60 @@
+﻿<ResourceDictionary  
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"  
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"  
+    xmlns:controls="using:nexus.common.control">  
+
+    <Style TargetType="controls:NxNumPad">  
+        <Setter Property="Template">  
+            <Setter.Value>  
+                <ControlTemplate TargetType="controls:NxNumPad">  
+                    <StackPanel Orientation="Vertical" HorizontalAlignment="Center" VerticalAlignment="Center" Spacing="4">  
+                        
+                        <!-- Display -->  
+                        <controls:NxLabel x:Name="lblDisplay"  
+                                         Height="40"  
+                                         Margin="4"  
+                                         IsReadOnly="True"  
+                                         BorderThickness="2"  
+                                         PromptFontSize="18"  
+                                         PromptHorizontalAlignment="Center" PromptVerticalAlignment="Center"   
+                                         Prompt="{Binding Value, RelativeSource={RelativeSource TemplatedParent}, Mode=TwoWay}"  
+                                         Visibility="{TemplateBinding ShowDisplay}" />  
+
+                        <!-- Numeric Grid -->  
+                        <Grid Margin="4" >  
+                            <Grid.RowDefinitions>  
+                                <RowDefinition/><RowDefinition/><RowDefinition/><RowDefinition/>  
+                            </Grid.RowDefinitions>  
+                            <Grid.ColumnDefinitions>  
+                                <ColumnDefinition/><ColumnDefinition/><ColumnDefinition/>  
+                            </Grid.ColumnDefinitions>  
+
+                            <controls:NxButton x:Name="btn1" Grid.Row="0" Grid.Column="0" Prompt="1" Margin="1" Width="{TemplateBinding ButtonWidth}" Height="{TemplateBinding ButtonHeight}" PromptHorizontalAlignment="Center" PromptVerticalAlignment="Center" />  
+                            <controls:NxButton x:Name="btn2" Grid.Row="0" Grid.Column="1" Prompt="2" Margin="1" Width="{TemplateBinding ButtonWidth}" Height="{TemplateBinding ButtonHeight}" PromptHorizontalAlignment="Center" PromptVerticalAlignment="Center"  />  
+                            <controls:NxButton x:Name="btn3" Grid.Row="0" Grid.Column="2" Prompt="3" Margin="1" Width="{TemplateBinding ButtonWidth}" Height="{TemplateBinding ButtonHeight}" PromptHorizontalAlignment="Center" PromptVerticalAlignment="Center"  />  
+
+                            <controls:NxButton x:Name="btn4" Grid.Row="1" Grid.Column="0" Prompt="4" Margin="1" Width="{TemplateBinding ButtonWidth}" Height="{TemplateBinding ButtonHeight}" PromptHorizontalAlignment="Center" PromptVerticalAlignment="Center"  />  
+                            <controls:NxButton x:Name="btn5" Grid.Row="1" Grid.Column="1" Prompt="5" Margin="1" Width="{TemplateBinding ButtonWidth}" Height="{TemplateBinding ButtonHeight}" PromptHorizontalAlignment="Center" PromptVerticalAlignment="Center"  />  
+                            <controls:NxButton x:Name="btn6" Grid.Row="1" Grid.Column="2" Prompt="6" Margin="1" Width="{TemplateBinding ButtonWidth}" Height="{TemplateBinding ButtonHeight}" PromptHorizontalAlignment="Center" PromptVerticalAlignment="Center"  />  
+
+                            <controls:NxButton x:Name="btn7" Grid.Row="2" Grid.Column="0" Prompt="7" Margin="1" Width="{TemplateBinding ButtonWidth}" Height="{TemplateBinding ButtonHeight}" PromptHorizontalAlignment="Center" PromptVerticalAlignment="Center"  />  
+                            <controls:NxButton x:Name="btn8" Grid.Row="2" Grid.Column="1" Prompt="8" Margin="1" Width="{TemplateBinding ButtonWidth}" Height="{TemplateBinding ButtonHeight}" PromptHorizontalAlignment="Center" PromptVerticalAlignment="Center"  />  
+                            <controls:NxButton x:Name="btn9" Grid.Row="2" Grid.Column="2" Prompt="9" Margin="1" Width="{TemplateBinding ButtonWidth}" Height="{TemplateBinding ButtonHeight}" PromptHorizontalAlignment="Center" PromptVerticalAlignment="Center"  />  
+
+                            <controls:NxButton x:Name="btnClear" Grid.Row="3" Grid.Column="0" Prompt="C" Margin="1" Width="{TemplateBinding ButtonWidth}" Height="{TemplateBinding ButtonHeight}" PromptHorizontalAlignment="Center" PromptVerticalAlignment="Center"  />  
+                            <controls:NxButton x:Name="btn0"    Grid.Row="3" Grid.Column="1" Prompt="0" Margin="1" Width="{TemplateBinding ButtonWidth}" Height="{TemplateBinding ButtonHeight}" PromptHorizontalAlignment="Center" PromptVerticalAlignment="Center"  />  
+                            <controls:NxButton x:Name="btnBack" Grid.Row="3" Grid.Column="2" Prompt="&lt;=" Margin="1" Width="{TemplateBinding ButtonWidth}" Height="{TemplateBinding ButtonHeight}" PromptHorizontalAlignment="Center" PromptVerticalAlignment="Center"  />  
+                        </Grid>  
+
+                        <!-- Symbol / Action Row -->  
+                        <StackPanel Orientation="Horizontal" HorizontalAlignment="Center" Spacing="8" Margin="4">  
+                            <controls:NxButton x:Name="btnDot" Prompt="." Width="{TemplateBinding ButtonWidth}" Height="{TemplateBinding ButtonHeight}" PromptHorizontalAlignment="Center" PromptVerticalAlignment="Center"  />  
+                            <controls:NxButton x:Name="btnNeg" Prompt="+/-" Width="{TemplateBinding ButtonWidth}" Height="{TemplateBinding ButtonHeight}" PromptHorizontalAlignment="Center" PromptVerticalAlignment="Center"  />  
+                            <controls:NxButton x:Name="btnOK"  Prompt="OK" Height="{TemplateBinding ButtonHeight}" PromptHorizontalAlignment="Center" PromptVerticalAlignment="Center"  />  
+                        </StackPanel>  
+                    </StackPanel>  
+                </ControlTemplate>  
+            </Setter.Value>  
+        </Setter>  
+    </Style>  
+</ResourceDictionary>

@@ -1,0 +1,52 @@
+﻿<ResourceDictionary
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:nexus.common.control">
+
+    <Style TargetType="local:NxMenuItem">
+        <Setter Property="Background" Value="{ThemeResource NxMenuItemBack}" />
+        <Setter Property="BorderColor" Value="{ThemeResource NxBorder}" />
+        <Setter Property="BorderThickness" Value="1" />
+        <Setter Property="BorderBrush" Value="{x:Null}" />
+
+        <Setter Property="Prompt" Value="Prompt" />
+        <Setter Property="PromptHorizontalAlignment" Value="Center" />
+        <Setter Property="PromptVerticalAlignment" Value="Center" />
+        <Setter Property="PromptFontFamily" Value="Arial" />
+        <Setter Property="PromptFontSize" Value="12" />
+        <Setter Property="PromptForeColor" Value="{ThemeResource NxMenuItemFore}" />
+        <Setter Property="PromptBackColor" Value="{x:Null}" />
+        <Setter Property="PromptMargin" Value="1" />
+        <Setter Property="PromptTextWrapping" Value="NoWrap" />
+
+        <Setter Property="Template">
+            <Setter.Value>
+                <ControlTemplate TargetType="local:NxMenuItem">
+                    <Grid>
+                        <Border x:Name="outer"
+                                BorderThickness="{TemplateBinding BorderThickness}"
+                                CornerRadius="{TemplateBinding BorderRadius}"
+                                BorderBrush="{TemplateBinding BorderColor}"
+                                Background="Transparent">
+
+                            <Border x:Name="inner"
+                                    BorderThickness="{TemplateBinding BorderThickness}"
+                                    CornerRadius="{TemplateBinding InnerBorderRadius}"
+                                    BorderBrush="{TemplateBinding BorderColor}" />
+                        </Border>
+
+                        <TextBlock     x:Name="label"
+                                       HorizontalAlignment="Center"
+                                       VerticalAlignment="Center" 
+                                       Text="{TemplateBinding Prompt}"
+                                       Margin="{TemplateBinding PromptMargin}"
+                                       TabIndex="{TemplateBinding TabIndex}" />
+
+                        <local:NxImage x:Name="picture" Width="32" Visibility="Collapsed"  />
+
+                    </Grid>
+                </ControlTemplate>
+            </Setter.Value>
+        </Setter>
+    </Style>
+</ResourceDictionary>

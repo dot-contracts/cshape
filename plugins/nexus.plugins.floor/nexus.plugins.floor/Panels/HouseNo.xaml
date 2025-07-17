@@ -1,0 +1,30 @@
+﻿<my:NxPanelBase
+
+    x:Class="nexus.plugins.floor.HouseNo" 
+    
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+
+    xmlns:my="using:nexus.common.control" 
+   
+    mc:Ignorable="d" d:DesignWidth="648.286" d:DesignHeight="370.286">
+    <Grid  x:Name="Panel" >
+        <my:NxLabel x:Name="lbHeader" PromptWidth="65" Prompt="EGM Details" PromptFontSize="16" />
+
+        <StackPanel>
+
+            
+            <my:NxList x:Name="HistList" />
+            <my:NxTextEdit x:Name="txHouse"    PromptWidth="65" Prompt="House No:" />
+            <my:NxTextEdit x:Name="txGameName" PromptWidth="65" Prompt="Game Name:" />
+            <my:NxTextEdit x:Name="txPlayer"   PromptWidth="65" Prompt="Player:" />
+            <my:NxTextEdit x:Name="txTier"     PromptWidth="65" Prompt="Tier:" />
+            <my:NxTextEdit x:Name="txPlayTime" PromptWidth="65" Prompt="Play Time:" />
+            <my:NxTextEdit x:Name="txAvgBet"   PromptWidth="65" Prompt="Average Bet:" />
+        </StackPanel>
+
+    </Grid>
+
+</my:NxPanelBase>

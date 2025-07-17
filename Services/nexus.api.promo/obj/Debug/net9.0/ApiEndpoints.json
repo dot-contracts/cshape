@@ -1,0 +1,82 @@
+[
+  {
+    "ContainingType": "nexus.api.promo.apiAction",
+    "Method": "Post",
+    "RelativePath": "pro/Action",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "request",
+        "Type": "nexus.shared.promo.ActionRequest",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "nexus.api.promo.apiPool",
+    "Method": "Post",
+    "RelativePath": "pro/Pool",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "request",
+        "Type": "nexus.shared.promo.PoolRequest",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "nexus.api.promo.apiPoolItem",
+    "Method": "Post",
+    "RelativePath": "pro/PoolItem",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "request",
+        "Type": "nexus.shared.promo.PoolItemRequest",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "nexus.api.promo.apiPromotion",
+    "Method": "Post",
+    "RelativePath": "pro/Promotion",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "request",
+        "Type": "nexus.shared.promo.PromotionRequest",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "nexus.api.promo.apiTrigger",
+    "Method": "Post",
+    "RelativePath": "pro/Trigger",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "request",
+        "Type": "nexus.shared.promo.TriggerRequest",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  }
+]

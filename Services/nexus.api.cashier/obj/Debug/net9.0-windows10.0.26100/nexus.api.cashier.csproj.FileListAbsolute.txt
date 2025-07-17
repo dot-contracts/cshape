@@ -1,0 +1,14 @@
+F:\GitHub\nexus\Source\Services\nexus.api.cashier\obj\Debug\net9.0-windows10.0.26100\nexus.api.cashier.csproj.AssemblyReference.cache
+F:\GitHub\nexus\Source\Services\nexus.api.cashier\obj\Debug\net9.0-windows10.0.26100\UnoImage.stamp
+F:\GitHub\nexus\Source\Services\nexus.api.cashier\obj\Debug\net9.0-windows10.0.26100\nexus.api.cashier.GeneratedMSBuildEditorConfig.editorconfig
+F:\GitHub\nexus\Source\Services\nexus.api.cashier\obj\Debug\net9.0-windows10.0.26100\nexus.api.cashier.AssemblyInfoInputs.cache
+F:\GitHub\nexus\Source\Services\nexus.api.cashier\obj\Debug\net9.0-windows10.0.26100\nexus.api.cashier.AssemblyInfo.cs
+F:\GitHub\nexus\Source\Services\nexus.api.cashier\obj\Debug\net9.0-windows10.0.26100\nexus.api.cashier.csproj.CoreCompileInputs.cache
+F:\GitHub\nexus\Source\Services\nexus.api.cashier\obj\Debug\net9.0-windows10.0.26100\nexus.api.cashier.sourcelink.json
+E:\Projects\update\Source\Services\nexus.api.cashier\obj\Debug\net9.0-windows10.0.26100\nexus.api.cashier.csproj.AssemblyReference.cache
+E:\Projects\update\Source\Services\nexus.api.cashier\obj\Debug\net9.0-windows10.0.26100\UnoImage.stamp
+E:\Projects\update\Source\Services\nexus.api.cashier\obj\Debug\net9.0-windows10.0.26100\nexus.api.cashier.GeneratedMSBuildEditorConfig.editorconfig
+E:\Projects\update\Source\Services\nexus.api.cashier\obj\Debug\net9.0-windows10.0.26100\nexus.api.cashier.AssemblyInfoInputs.cache
+E:\Projects\update\Source\Services\nexus.api.cashier\obj\Debug\net9.0-windows10.0.26100\nexus.api.cashier.AssemblyInfo.cs
+E:\Projects\update\Source\Services\nexus.api.cashier\obj\Debug\net9.0-windows10.0.26100\nexus.api.cashier.csproj.CoreCompileInputs.cache
+E:\Projects\update\Source\Services\nexus.api.cashier\obj\Debug\net9.0-windows10.0.26100\nexus.api.cashier.sourcelink.json

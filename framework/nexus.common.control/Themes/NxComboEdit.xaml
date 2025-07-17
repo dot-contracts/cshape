@@ -1,0 +1,91 @@
+﻿<ResourceDictionary 
+    
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:nexus.common.control">
+
+    <Style TargetType="local:NxComboEdit">
+
+        <Setter Property="Prompt"                     Value="Prompt"/>
+        <Setter Property="PromptHorizontalAlignment"  Value="Left"/>
+        <Setter Property="PromptVerticalAlignment"    Value="Center"/>
+        <Setter Property="PromptFontFamily"           Value="Arial"/>
+        <Setter Property="PromptFontSize"             Value="12"/>
+        <Setter Property="PromptWidth"                Value="90"/>
+
+        <Setter Property="ReplyFontFamily"            Value="Arial"/>
+        <Setter Property="ReplyFontSize"              Value="12"/>
+        <Setter Property="ReplyRequiredText"          Value=""/>
+        <Setter Property="ReplyInvalidPicture"        Value="cross"/>
+        <Setter Property="ReplyValidPicture"          Value="tick"/>
+        <Setter Property="MaskType"                   Value="None"/>
+        <Setter Property="ChangeEventType"            Value="OnLostFocus"/>
+        <Setter Property="ReplyHorizontalAlignment"   Value="Left"/>
+        <Setter Property="ReplyVerticalAlignment"     Value="Center"/>
+        <Setter Property="IsTabStop"                  Value="False"/>
+        <Setter Property="SuppressNavigate"           Value="False"/>
+
+        <Setter Property="FontSize" Value="{Binding Path=ReplyFontSize, RelativeSource={RelativeSource Self}}" />
+        <Setter Property="ScrollViewer.HorizontalScrollBarVisibility" Value="Auto"/>
+        <Setter Property="ScrollViewer.VerticalScrollBarVisibility" Value="Auto"/>
+      
+        <Setter Property="Template">
+            <Setter.Value>
+                <ControlTemplate TargetType="local:NxComboEdit">
+                    <Grid>
+
+                        <Border >
+                        
+                                <StackPanel Orientation="Horizontal">
+
+                                <local:NxLabel      x:Name="label"         
+                                                    PromptHorizontalAlignment ="{TemplateBinding PromptHorizontalAlignment}"
+                                                    PromptVerticalAlignment   ="{TemplateBinding PromptVerticalAlignment}"
+                                                    Prompt                    ="{TemplateBinding Prompt}"                               
+                                                    PromptFontFamily          ="{TemplateBinding PromptFontFamily}"
+                                                    PromptFontSize            ="{TemplateBinding PromptFontSize}"
+                                                    Height                    ="Auto"   
+                                    />
+
+                                <local:NxText       x:Name="editor" 
+                                                    MaxTextLength               = "{TemplateBinding MaxTextLength}"
+                                                    ReplyFontFamily             = "{TemplateBinding ReplyFontFamily}"
+                                                    ReplyFontSize               = "{TemplateBinding ReplyFontSize}"
+                                                    ReplyRequiredText           = "{TemplateBinding ReplyRequiredText}"
+                                                    ReplyHorizontalAlignment    = "{TemplateBinding ReplyHorizontalAlignment}"
+                                                    ReplyVerticalAlignment      = "{TemplateBinding ReplyVerticalAlignment}"                                                  
+                                                    VerticalAlignment           = "Center"
+                                                    MaskType                    = "{TemplateBinding MaskType}" 
+                                                    Mask                        = "{TemplateBinding Mask}" 
+                                                    IsReadOnly                  = "{TemplateBinding IsReadOnly}"
+                                                    IsRequired                  = "{TemplateBinding IsRequired}"
+                                                    ChangeEventType             = "{TemplateBinding ChangeEventType}" 
+                                                    SuppressNavigate            = "{TemplateBinding SuppressNavigate}" 
+                                                    TabIndex                    ="{TemplateBinding TabIndex}"
+                                                    Height                      ="Auto"  
+                                                    IsTabStop                   ="False"                                                      
+                                    />
+
+
+                                    <local:NxImage  x:Name    ="button"
+                                                    Picture   ="search"   
+                                                    Width     ="32"
+                                    />
+
+
+                            </StackPanel>
+                            
+                        </Border>
+
+                        <ProgressBar x:Name="progbar" HorizontalAlignment="Stretch" Width="Auto" VerticalAlignment="Stretch" Height="Auto" Visibility="Collapsed" Opacity="0.8"  />
+
+                    </Grid>
+                    
+                </ControlTemplate>
+            </Setter.Value>
+        </Setter>
+    </Style>
+</ResourceDictionary>
+
+
+        

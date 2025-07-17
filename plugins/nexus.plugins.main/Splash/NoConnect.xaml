@@ -1,0 +1,28 @@
+﻿<my:NxGroupBase     
+    x:Class="nexus.plugins.main.NoConnect"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+    xmlns:my="using:nexus.common.control" 
+    
+    mc:Ignorable="d" Height="378" Width="630" Background="#71FF0000" HorizontalAlignment="Left" VerticalAlignment="Top" >
+
+    <Grid Width="410" Margin="118,38,0,0" HorizontalAlignment="Left" VerticalAlignment="Top" Height="300">
+        <TextBlock Text="Cannot connect to Database ..." Height="42" VerticalAlignment="Top" TextAlignment="Center" FontSize="13.333" FontWeight="Bold" Margin="0,-6,0,0" Foreground="White" HorizontalAlignment="Left" Width="410" />
+        <TextBlock Text="Please wait." Height="26" Margin="7.327,9,0,0" x:Name="lbTimer" VerticalAlignment="Top" TextAlignment="Center" Foreground="White" HorizontalAlignment="Left" Width="410" />
+        <ListBox Margin="5,32,0,0" x:Name="LBox" HorizontalAlignment="Left" Width="400" Height="130" VerticalAlignment="Top" />
+        <Button x:Name="btQuit" Content="Quit" HorizontalAlignment="Left" Height="28" Margin="1,0,0,4.296" VerticalAlignment="Bottom" Width="90"/>
+        <Button x:Name="btUpdate" Content="Edit Endpoint" Margin="94.701,0,0,4.483" HorizontalAlignment="Left" Width="310.299" Height="27.813" VerticalAlignment="Bottom"/>
+        <Grid x:Name="Settings" Margin="0,165,0,0" Opacity="1" HorizontalAlignment="Left" Width="410" VerticalAlignment="Top" Height="78">
+            <Button x:Name="btTest" Content="Test" HorizontalAlignment="Right" Height="79" Margin="0,0,5.775,0" VerticalAlignment="Top" Width="49"/>
+            <TextBox x:Name="txtServer" Margin="72,0,58,0" TextWrapping="Wrap" Background="Black" Foreground="White" Height="24" VerticalAlignment="Top"/>
+            <TextBlock Text="Server:" Margin="1,-2,0,0" TextAlignment="left" Foreground="White" HorizontalAlignment="Left" Width="75" Height="26" VerticalAlignment="Top" />
+            <TextBox x:Name="txtConnect" Height="24" Margin="72,0,0,0" TextWrapping="Wrap" VerticalAlignment="Bottom" Background="Black" Foreground="White" HorizontalAlignment="Left" Width="252" />
+            <TextBlock Text="Connect:" Height="26" Margin="1,0,0,0" VerticalAlignment="Bottom" TextAlignment="left" Foreground="White" HorizontalAlignment="Left" Width="75" />
+            <TextBox x:Name="txtPort" Margin="72,27,58,27" TextWrapping="Wrap" Background="Black" Foreground="White"/>
+            <TextBlock Text="Port:" Margin="1,25,0,27" TextAlignment="left" Foreground="White" HorizontalAlignment="Left" Width="75" />
+        </Grid>
+    </Grid>
+
+</my:NxGroupBase>

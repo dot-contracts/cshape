@@ -1,0 +1,14 @@
+F:\GitHub\nexus\Source\framework\nexus.common.reports\bin\Debug\net9.0\nexus.common.reports.deps.json
+F:\GitHub\nexus\Source\framework\nexus.common.reports\bin\Debug\net9.0\nexus.common.reports.dll
+F:\GitHub\nexus\Source\framework\nexus.common.reports\bin\Debug\net9.0\nexus.common.reports.pdb
+F:\GitHub\nexus\Source\framework\nexus.common.reports\obj\Debug\net9.0\nexus.common.reports.csproj.AssemblyReference.cache
+F:\GitHub\nexus\Source\framework\nexus.common.reports\obj\Debug\net9.0\UnoImage.stamp
+F:\GitHub\nexus\Source\framework\nexus.common.reports\obj\Debug\net9.0\nexus.common.reports.d-bfalse.GeneratedMSBuildEditorConfig.editorconfig
+F:\GitHub\nexus\Source\framework\nexus.common.reports\obj\Debug\net9.0\nexus.common.reports.AssemblyInfoInputs.cache
+F:\GitHub\nexus\Source\framework\nexus.common.reports\obj\Debug\net9.0\nexus.common.reports.AssemblyInfo.cs
+F:\GitHub\nexus\Source\framework\nexus.common.reports\obj\Debug\net9.0\nexus.common.reports.csproj.CoreCompileInputs.cache
+F:\GitHub\nexus\Source\framework\nexus.common.reports\obj\Debug\net9.0\nexus.common.reports.sourcelink.json
+F:\GitHub\nexus\Source\framework\nexus.common.reports\obj\Debug\net9.0\nexus.common.reports.dll
+F:\GitHub\nexus\Source\framework\nexus.common.reports\obj\Debug\net9.0\refint\nexus.common.reports.dll
+F:\GitHub\nexus\Source\framework\nexus.common.reports\obj\Debug\net9.0\nexus.common.reports.pdb
+F:\GitHub\nexus\Source\framework\nexus.common.reports\obj\Debug\net9.0\ref\nexus.common.reports.dll

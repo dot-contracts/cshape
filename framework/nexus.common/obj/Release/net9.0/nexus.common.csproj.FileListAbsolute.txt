@@ -1,0 +1,13 @@
+C:\Nexus\git\nexus\Source\framework\nexus.common\bin\Release\net9.0\nexus.common.deps.json
+C:\Nexus\git\nexus\Source\framework\nexus.common\bin\Release\net9.0\nexus.common.dll
+C:\Nexus\git\nexus\Source\framework\nexus.common\bin\Release\net9.0\nexus.common.pdb
+C:\Nexus\git\nexus\Source\framework\nexus.common\obj\Release\net9.0\nexus.common.csproj.AssemblyReference.cache
+C:\Nexus\git\nexus\Source\framework\nexus.common\obj\Release\net9.0\nexus.common.GeneratedMSBuildEditorConfig.editorconfig
+C:\Nexus\git\nexus\Source\framework\nexus.common\obj\Release\net9.0\nexus.common.AssemblyInfoInputs.cache
+C:\Nexus\git\nexus\Source\framework\nexus.common\obj\Release\net9.0\nexus.common.AssemblyInfo.cs
+C:\Nexus\git\nexus\Source\framework\nexus.common\obj\Release\net9.0\nexus.common.csproj.CoreCompileInputs.cache
+C:\Nexus\git\nexus\Source\framework\nexus.common\obj\Release\net9.0\nexus.common.sourcelink.json
+C:\Nexus\git\nexus\Source\framework\nexus.common\obj\Release\net9.0\nexus.common.dll
+C:\Nexus\git\nexus\Source\framework\nexus.common\obj\Release\net9.0\refint\nexus.common.dll
+C:\Nexus\git\nexus\Source\framework\nexus.common\obj\Release\net9.0\nexus.common.pdb
+C:\Nexus\git\nexus\Source\framework\nexus.common\obj\Release\net9.0\ref\nexus.common.dll

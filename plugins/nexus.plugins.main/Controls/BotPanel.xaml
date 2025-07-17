@@ -1,0 +1,17 @@
+﻿<my:NxControlBase 
+    
+    x:Class="nexus.plugins.main.BotPanel"
+             
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+   
+    xmlns:my="using:nexus.common.control" 
+    
+    mc:Ignorable="d" d:DesignHeight="20" d:DesignWidth="400">
+    <Grid>
+        <my:NxButton x:Name="btInfo" VerticalAlignment="Top" Picture="info1"  PictureVisible="True" Prompt="Info" HorizontalAlignment="Right" Width="46" PromptHorizontalAlignment="Left" PictureHeight="16" PictureWidth="16" Height="20"/>
+        <my:NxLabel x:Name="lbInfo"  Prompt="" Margin="0,0,51,0"/>
+    </Grid>
+</my:NxControlBase>

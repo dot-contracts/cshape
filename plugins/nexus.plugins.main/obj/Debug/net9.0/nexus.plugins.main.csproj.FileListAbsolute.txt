@@ -1,0 +1,14 @@
+E:\Projects\update\nexus\Source\plugins\nexus.plugins.main\obj\Debug\net9.0\nexus.plugins.main.csproj.AssemblyReference.cache
+E:\Projects\update\nexus\Source\plugins\nexus.plugins.main\obj\Debug\net9.0\UnoImage.stamp
+E:\Projects\update\nexus\Source\plugins\nexus.plugins.main\obj\Debug\net9.0\nexus.plugins.main.d-bfalse.GeneratedMSBuildEditorConfig.editorconfig
+E:\Projects\update\nexus\Source\plugins\nexus.plugins.main\obj\Debug\net9.0\nexus.plugins.main.AssemblyInfoInputs.cache
+E:\Projects\update\nexus\Source\plugins\nexus.plugins.main\obj\Debug\net9.0\nexus.plugins.main.AssemblyInfo.cs
+E:\Projects\update\nexus\Source\plugins\nexus.plugins.main\obj\Debug\net9.0\nexus.plugins.main.csproj.CoreCompileInputs.cache
+E:\Projects\update\nexus\Source\plugins\nexus.plugins.main\obj\Debug\net9.0\nexus.plugins.main.sourcelink.json
+E:\Projects\update\Source\plugins\nexus.plugins.main\obj\Debug\net9.0\nexus.plugins.main.csproj.AssemblyReference.cache
+E:\Projects\update\Source\plugins\nexus.plugins.main\obj\Debug\net9.0\UnoImage.stamp
+E:\Projects\update\Source\plugins\nexus.plugins.main\obj\Debug\net9.0\nexus.plugins.main.d-bfalse.GeneratedMSBuildEditorConfig.editorconfig
+E:\Projects\update\Source\plugins\nexus.plugins.main\obj\Debug\net9.0\nexus.plugins.main.AssemblyInfoInputs.cache
+E:\Projects\update\Source\plugins\nexus.plugins.main\obj\Debug\net9.0\nexus.plugins.main.AssemblyInfo.cs
+E:\Projects\update\Source\plugins\nexus.plugins.main\obj\Debug\net9.0\nexus.plugins.main.csproj.CoreCompileInputs.cache
+E:\Projects\update\Source\plugins\nexus.plugins.main\obj\Debug\net9.0\nexus.plugins.main.sourcelink.json

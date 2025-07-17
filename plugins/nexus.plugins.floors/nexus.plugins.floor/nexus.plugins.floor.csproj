@@ -1,0 +1,47 @@
+<Project Sdk="Uno.Sdk">
+  <PropertyGroup>
+    <TargetFrameworks>net9.0;net9.0-browser;net9.0-windows10.0.26100</TargetFrameworks>
+    <OutputType>Exe</OutputType>
+    <UnoSingleProject>true</UnoSingleProject>
+    <ApplicationTitle>nexus.plugins.floor</ApplicationTitle>
+    <ApplicationId>com.companyname.nexus.plugins.floor</ApplicationId>
+    <ApplicationDisplayVersion>1.0</ApplicationDisplayVersion>
+    <ApplicationVersion>1</ApplicationVersion>
+    <ApplicationPublisher>davew</ApplicationPublisher>
+    <Description>nexus.plugins.floor powered by Uno Platform.</Description>
+      <UseWasm>true</UseWasm>
+      <UseWinUI>true</UseWinUI>
+      <RootNamespace>nexus.plugins.floor</RootNamespace>      
+    <UnoFeatures>
+      Material;
+      Hosting;
+      Toolkit;
+      Logging;
+      LoggingSerilog;
+      MVUX;
+      Configuration;
+      HttpKiota;
+      Serialization;
+      Localization;
+      Navigation;
+      SkiaRenderer;
+    </UnoFeatures>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="CommunityToolkit.Mvvm" />
+    <PackageReference Include="Microsoft.AspNetCore.Authorization" />
+    <PackageReference Include="Microsoft.AspNetCore.Mvc" />
+    <PackageReference Include="Microsoft.AspNetCore.SignalR.Client" />
+    <PackageReference Include="Newtonsoft.Json" />
+    <PackageReference Include="System.IdentityModel.Tokens.Jwt" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\..\..\framework\nexus.common.chart\nexus.common.chart.csproj" />
+    <ProjectReference Include="..\..\..\framework\nexus.common.control\nexus.common.control.csproj" />
+    <ProjectReference Include="..\..\..\framework\nexus.common\nexus.common.csproj" />
+    <ProjectReference Include="..\..\..\shared\nexus.shared.common\nexus.shared.common.csproj" />
+    <ProjectReference Include="..\..\..\shared\nexus.shared.gaming\nexus.shared.gaming.csproj" />
+  </ItemGroup>
+</Project>

@@ -1,0 +1,30 @@
+﻿<my:NxGroupBase
+
+    x:Class="nexus.plugins.promo.Winner" 
+    
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+
+    xmlns:my="using:nexus.common.control"
+    xmlns:pc="using:nexus.plugins.common"
+   
+    mc:Ignorable="d" HorizontalAlignment="Stretch" VerticalAlignment="Stretch">
+
+    <Grid x:Name="Panel" Margin="0" Width="400" HorizontalAlignment="Stretch" VerticalAlignment="Stretch"  >
+
+        <Grid.RowDefinitions>
+            <RowDefinition Height="60"/>
+        </Grid.RowDefinitions>
+
+        <StackPanel Orientation="Horizontal" Grid.Row="0"  >
+            <my:NxTextEdit  x:Name="txMember"   Prompt="Member:"  Width="100" PromptWidth="50"   /> "
+            <my:NxButton    x:Name="btAward"    Prompt="Award"    Width="50"  /> "
+            <my:NxButton    x:Name="btDismiss"  Prompt="Dismiss"  Width="50"  /> "
+            <my:NxLabel     x:Name="lbStatus"   Prompt="Status"   Width="100" Visibility="Collapsed"  /> "
+        </StackPanel>
+
+    </Grid>
+
+</my:NxGroupBase>

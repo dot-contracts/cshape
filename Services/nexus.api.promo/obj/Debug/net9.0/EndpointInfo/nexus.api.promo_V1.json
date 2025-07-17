@@ -1,0 +1,1074 @@
+{
+  "openapi": "3.0.1",
+  "info": {
+    "title": "NextNet Promo WebAPI",
+    "description": "NextNet Promo WebAPI",
+    "version": "V1"
+  },
+  "paths": {
+    "/pro/Action": {
+      "post": {
+        "tags": [
+          "apiAction"
+        ],
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/ActionRequest"
+              }
+            },
+            "text/json": {
+              "schema": {
+                "$ref": "#/components/schemas/ActionRequest"
+              }
+            },
+            "application/*+json": {
+              "schema": {
+                "$ref": "#/components/schemas/ActionRequest"
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/pro/Pool": {
+      "post": {
+        "tags": [
+          "apiPool"
+        ],
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/PoolRequest"
+              }
+            },
+            "text/json": {
+              "schema": {
+                "$ref": "#/components/schemas/PoolRequest"
+              }
+            },
+            "application/*+json": {
+              "schema": {
+                "$ref": "#/components/schemas/PoolRequest"
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/pro/PoolItem": {
+      "post": {
+        "tags": [
+          "apiPoolItem"
+        ],
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/PoolItemRequest"
+              }
+            },
+            "text/json": {
+              "schema": {
+                "$ref": "#/components/schemas/PoolItemRequest"
+              }
+            },
+            "application/*+json": {
+              "schema": {
+                "$ref": "#/components/schemas/PoolItemRequest"
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/pro/Promotion": {
+      "post": {
+        "tags": [
+          "apiPromotion"
+        ],
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/PromotionRequest"
+              }
+            },
+            "text/json": {
+              "schema": {
+                "$ref": "#/components/schemas/PromotionRequest"
+              }
+            },
+            "application/*+json": {
+              "schema": {
+                "$ref": "#/components/schemas/PromotionRequest"
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/pro/Trigger": {
+      "post": {
+        "tags": [
+          "apiTrigger"
+        ],
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/TriggerRequest"
+              }
+            },
+            "text/json": {
+              "schema": {
+                "$ref": "#/components/schemas/TriggerRequest"
+              }
+            },
+            "application/*+json": {
+              "schema": {
+                "$ref": "#/components/schemas/TriggerRequest"
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    }
+  },
+  "components": {
+    "schemas": {
+      "Action": {
+        "type": "object",
+        "properties": {
+          "promotion": {
+            "type": "string",
+            "nullable": true
+          },
+          "actionId": {
+            "type": "integer",
+            "format": "int32",
+            "nullable": true
+          },
+          "actionType": {
+            "type": "string",
+            "nullable": true
+          },
+          "actionState": {
+            "type": "string",
+            "nullable": true
+          },
+          "actionDefn": {
+            "type": "string",
+            "nullable": true
+          },
+          "description": {
+            "type": "string",
+            "nullable": true
+          },
+          "prize": {
+            "type": "integer",
+            "format": "int32",
+            "nullable": true
+          },
+          "account": {
+            "type": "string",
+            "nullable": true
+          },
+          "amount": {
+            "type": "number",
+            "format": "double",
+            "nullable": true
+          },
+          "pointsRate": {
+            "type": "number",
+            "format": "double",
+            "nullable": true
+          },
+          "delayType": {
+            "type": "string",
+            "nullable": true
+          },
+          "delay": {
+            "type": "integer",
+            "format": "int32",
+            "nullable": true
+          },
+          "expireType": {
+            "type": "string",
+            "nullable": true
+          },
+          "expiry": {
+            "type": "integer",
+            "format": "int32",
+            "nullable": true
+          },
+          "storyId": {
+            "type": "integer",
+            "format": "int32",
+            "nullable": true
+          },
+          "storyProperty": {
+            "type": "string",
+            "nullable": true
+          },
+          "outputType": {
+            "type": "string",
+            "nullable": true
+          },
+          "outputTo": {
+            "type": "string",
+            "nullable": true
+          },
+          "definition": {
+            "type": "string",
+            "nullable": true
+          },
+          "actionTypeId": {
+            "type": "integer",
+            "format": "int32",
+            "nullable": true
+          },
+          "actionStateId": {
+            "type": "integer",
+            "format": "int32",
+            "nullable": true
+          },
+          "delayTypeId": {
+            "type": "integer",
+            "format": "int32",
+            "nullable": true
+          },
+          "expiryTypeId": {
+            "type": "integer",
+            "format": "int32",
+            "nullable": true
+          },
+          "promotionId": {
+            "type": "integer",
+            "format": "int32",
+            "nullable": true
+          },
+          "sequence": {
+            "type": "integer",
+            "format": "int32",
+            "nullable": true
+          },
+          "sharing": {
+            "type": "integer",
+            "format": "int32",
+            "nullable": true
+          },
+          "shareState": {
+            "type": "integer",
+            "format": "int32",
+            "nullable": true
+          },
+          "operability": {
+            "type": "integer",
+            "format": "int32",
+            "nullable": true
+          },
+          "logging": {
+            "type": "integer",
+            "format": "int32",
+            "nullable": true
+          },
+          "scheduleId": {
+            "type": "integer",
+            "format": "int32",
+            "nullable": true
+          },
+          "systemId": {
+            "type": "integer",
+            "format": "int32",
+            "nullable": true
+          },
+          "venueId": {
+            "type": "integer",
+            "format": "int32",
+            "nullable": true
+          },
+          "parentId": {
+            "type": "integer",
+            "format": "int32",
+            "nullable": true
+          },
+          "mediaId": {
+            "type": "integer",
+            "format": "int32",
+            "nullable": true
+          },
+          "ownerId": {
+            "type": "integer",
+            "format": "int32",
+            "nullable": true
+          },
+          "logId": {
+            "type": "integer",
+            "format": "int32",
+            "nullable": true
+          }
+        },
+        "additionalProperties": false
+      },
+      "ActionRequest": {
+        "type": "object",
+        "properties": {
+          "actionType": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "vendor": {
+            "type": "string",
+            "nullable": true
+          },
+          "location": {
+            "type": "string",
+            "nullable": true
+          },
+          "action": {
+            "$ref": "#/components/schemas/Action"
+          }
+        },
+        "additionalProperties": false
+      },
+      "Pool": {
+        "type": "object",
+        "properties": {
+          "poolId": {
+            "type": "integer",
+            "format": "int32",
+            "nullable": true
+          },
+          "poolType": {
+            "type": "string",
+            "nullable": true
+          },
+          "poolState": {
+            "type": "string",
+            "nullable": true
+          },
+          "promotion": {
+            "type": "string",
+            "nullable": true
+          },
+          "promotionType": {
+            "type": "string",
+            "nullable": true
+          },
+          "worker": {
+            "type": "string",
+            "nullable": true
+          },
+          "start": {
+            "type": "string",
+            "nullable": true
+          },
+          "finish": {
+            "type": "string",
+            "nullable": true
+          },
+          "ranges": {
+            "type": "string",
+            "nullable": true
+          },
+          "startRange": {
+            "type": "string",
+            "nullable": true
+          },
+          "finishRange": {
+            "type": "string",
+            "nullable": true
+          },
+          "trigger": {
+            "type": "string",
+            "nullable": true
+          },
+          "triggerDefn": {
+            "type": "string",
+            "nullable": true
+          },
+          "triggerValue": {
+            "type": "string",
+            "nullable": true
+          },
+          "action": {
+            "type": "string",
+            "nullable": true
+          },
+          "actionDefn": {
+            "type": "string",
+            "nullable": true
+          },
+          "promotionId": {
+            "type": "integer",
+            "format": "int32",
+            "nullable": true
+          },
+          "workerId": {
+            "type": "integer",
+            "format": "int32",
+            "nullable": true
+          },
+          "poolTypeId": {
+            "type": "integer",
+            "format": "int32",
+            "nullable": true
+          },
+          "poolStateId": {
+            "type": "integer",
+            "format": "int32",
+            "nullable": true
+          },
+          "scheduleId": {
+            "type": "integer",
+            "format": "int32",
+            "nullable": true
+          },
+          "poolItems": {
+            "type": "array",
+            "items": {
+              "$ref": "#/components/schemas/PoolItem"
+            },
+            "nullable": true
+          }
+        },
+        "additionalProperties": false
+      },
+      "PoolItem": {
+        "type": "object",
+        "properties": {
+          "poolItemId": {
+            "type": "integer",
+            "format": "int32",
+            "nullable": true
+          },
+          "poolItemState": {
+            "type": "string",
+            "nullable": true
+          },
+          "entry": {
+            "type": "string",
+            "nullable": true
+          },
+          "member": {
+            "type": "string",
+            "nullable": true
+          },
+          "badgeNo": {
+            "type": "string",
+            "nullable": true
+          },
+          "cardNo": {
+            "type": "string",
+            "nullable": true
+          },
+          "drawDate": {
+            "type": "string",
+            "nullable": true
+          },
+          "egm": {
+            "type": "string",
+            "nullable": true
+          },
+          "sequence": {
+            "type": "integer",
+            "format": "int32",
+            "nullable": true
+          },
+          "entries": {
+            "type": "integer",
+            "format": "int32",
+            "nullable": true
+          },
+          "poolId": {
+            "type": "integer",
+            "format": "int32",
+            "nullable": true
+          },
+          "promotionId": {
+            "type": "integer",
+            "format": "int32",
+            "nullable": true
+          },
+          "transactionId": {
+            "type": "integer",
+            "format": "int32",
+            "nullable": true
+          },
+          "memberId": {
+            "type": "integer",
+            "format": "int32",
+            "nullable": true
+          },
+          "egmId": {
+            "type": "integer",
+            "format": "int32",
+            "nullable": true
+          },
+          "poolItemStateId": {
+            "type": "integer",
+            "format": "int32",
+            "nullable": true
+          }
+        },
+        "additionalProperties": false
+      },
+      "PoolItemRequest": {
+        "type": "object",
+        "properties": {
+          "actionType": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "vendor": {
+            "type": "string",
+            "nullable": true
+          },
+          "location": {
+            "type": "string",
+            "nullable": true
+          },
+          "poolItem": {
+            "$ref": "#/components/schemas/PoolItem"
+          }
+        },
+        "additionalProperties": false
+      },
+      "PoolRequest": {
+        "type": "object",
+        "properties": {
+          "actionType": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "vendor": {
+            "type": "string",
+            "nullable": true
+          },
+          "location": {
+            "type": "string",
+            "nullable": true
+          },
+          "pool": {
+            "$ref": "#/components/schemas/Pool"
+          }
+        },
+        "additionalProperties": false
+      },
+      "Promotion": {
+        "type": "object",
+        "properties": {
+          "counter": {
+            "type": "integer",
+            "format": "int32",
+            "readOnly": true
+          },
+          "promotionId": {
+            "type": "integer",
+            "format": "int32",
+            "nullable": true
+          },
+          "promotionType": {
+            "type": "string",
+            "nullable": true
+          },
+          "promotionState": {
+            "type": "string",
+            "nullable": true
+          },
+          "description": {
+            "type": "string",
+            "nullable": true
+          },
+          "budget": {
+            "type": "string",
+            "nullable": true
+          },
+          "budgetId": {
+            "type": "integer",
+            "format": "int32",
+            "nullable": true
+          },
+          "advert": {
+            "type": "string",
+            "nullable": true
+          },
+          "advertId": {
+            "type": "integer",
+            "format": "int32",
+            "nullable": true
+          },
+          "startPage": {
+            "type": "string",
+            "nullable": true
+          },
+          "startPageId": {
+            "type": "integer",
+            "format": "int32",
+            "nullable": true
+          },
+          "presenter": {
+            "type": "string",
+            "nullable": true
+          },
+          "presenterId": {
+            "type": "integer",
+            "format": "int32",
+            "nullable": true
+          },
+          "award": {
+            "type": "string",
+            "nullable": true
+          },
+          "awardId": {
+            "type": "integer",
+            "format": "int32",
+            "nullable": true
+          },
+          "sponsor": {
+            "type": "string",
+            "nullable": true
+          },
+          "sponsorId": {
+            "type": "integer",
+            "format": "int32",
+            "nullable": true
+          },
+          "schedule": {
+            "$ref": "#/components/schemas/Schedule"
+          },
+          "trigger": {
+            "type": "string",
+            "nullable": true
+          },
+          "triggerType": {
+            "type": "string",
+            "nullable": true
+          },
+          "triggerValue": {
+            "type": "number",
+            "format": "double",
+            "nullable": true
+          },
+          "triggerId": {
+            "type": "integer",
+            "format": "int32",
+            "nullable": true
+          },
+          "action": {
+            "type": "string",
+            "nullable": true
+          },
+          "actionType": {
+            "type": "string",
+            "nullable": true
+          },
+          "actionAmount": {
+            "type": "number",
+            "format": "double",
+            "nullable": true
+          },
+          "actionId": {
+            "type": "integer",
+            "format": "int32",
+            "nullable": true
+          },
+          "gameTimeout": {
+            "type": "integer",
+            "format": "int32",
+            "nullable": true
+          },
+          "maxDraws": {
+            "type": "integer",
+            "format": "int32",
+            "nullable": true
+          },
+          "autoDraw": {
+            "type": "boolean",
+            "nullable": true
+          },
+          "drawInterval": {
+            "type": "integer",
+            "format": "int32",
+            "nullable": true
+          },
+          "maxZones": {
+            "type": "integer",
+            "format": "int32",
+            "nullable": true
+          },
+          "poolId": {
+            "type": "integer",
+            "format": "int32",
+            "nullable": true
+          },
+          "targetId": {
+            "type": "integer",
+            "format": "int32",
+            "nullable": true
+          },
+          "promotionTypeId": {
+            "type": "integer",
+            "format": "int32",
+            "nullable": true
+          },
+          "promotionStateId": {
+            "type": "integer",
+            "format": "int32",
+            "nullable": true
+          }
+        },
+        "additionalProperties": false
+      },
+      "PromotionRequest": {
+        "type": "object",
+        "properties": {
+          "actionType": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "vendor": {
+            "type": "string",
+            "nullable": true
+          },
+          "location": {
+            "type": "string",
+            "nullable": true
+          },
+          "promotion": {
+            "$ref": "#/components/schemas/Promotion"
+          }
+        },
+        "additionalProperties": false
+      },
+      "Schedule": {
+        "type": "object",
+        "properties": {
+          "scheduleId": {
+            "type": "integer",
+            "format": "int32",
+            "nullable": true
+          },
+          "entity": {
+            "type": "string",
+            "nullable": true
+          },
+          "active": {
+            "type": "integer",
+            "format": "int32",
+            "nullable": true
+          },
+          "scheduleDesc": {
+            "type": "string",
+            "nullable": true
+          },
+          "scheduleType": {
+            "type": "string",
+            "nullable": true
+          },
+          "scheduleState": {
+            "type": "string",
+            "nullable": true
+          },
+          "scheduleCode": {
+            "type": "string",
+            "nullable": true
+          },
+          "starts": {
+            "type": "string",
+            "nullable": true
+          },
+          "startsOn": {
+            "type": "string",
+            "nullable": true
+          },
+          "startsAt": {
+            "type": "string",
+            "nullable": true
+          },
+          "finishes": {
+            "type": "string",
+            "nullable": true
+          },
+          "finishesOn": {
+            "type": "string",
+            "nullable": true
+          },
+          "finishesAt": {
+            "type": "string",
+            "nullable": true
+          },
+          "days": {
+            "type": "string",
+            "nullable": true
+          },
+          "hours": {
+            "type": "string",
+            "nullable": true
+          },
+          "increment": {
+            "type": "integer",
+            "format": "int32",
+            "nullable": true
+          },
+          "intType": {
+            "type": "integer",
+            "format": "int32",
+            "nullable": true
+          },
+          "priority": {
+            "type": "integer",
+            "format": "int32",
+            "nullable": true
+          },
+          "duration": {
+            "type": "integer",
+            "format": "int32",
+            "nullable": true
+          },
+          "repeats": {
+            "type": "integer",
+            "format": "int32",
+            "nullable": true
+          },
+          "entityType": {
+            "type": "string",
+            "nullable": true
+          },
+          "typeValue": {
+            "type": "string",
+            "nullable": true
+          },
+          "stateValue": {
+            "type": "string",
+            "nullable": true
+          },
+          "intValueType": {
+            "type": "string",
+            "nullable": true
+          },
+          "nextRun": {
+            "type": "string",
+            "nullable": true
+          },
+          "lastRun": {
+            "type": "string",
+            "nullable": true
+          },
+          "runs": {
+            "type": "integer",
+            "format": "int32",
+            "nullable": true
+          },
+          "maxRuns": {
+            "type": "integer",
+            "format": "int32",
+            "nullable": true
+          },
+          "scheduleTypeId": {
+            "type": "integer",
+            "format": "int32",
+            "nullable": true
+          },
+          "scheduleStateId": {
+            "type": "integer",
+            "format": "int32",
+            "nullable": true
+          },
+          "entityTypeId": {
+            "type": "integer",
+            "format": "int32",
+            "nullable": true
+          }
+        },
+        "additionalProperties": false
+      },
+      "Trigger": {
+        "type": "object",
+        "properties": {
+          "triggerId": {
+            "type": "integer",
+            "format": "int32",
+            "nullable": true
+          },
+          "promotion": {
+            "type": "string",
+            "nullable": true
+          },
+          "promotionType": {
+            "type": "string",
+            "nullable": true
+          },
+          "promotionState": {
+            "type": "string",
+            "nullable": true
+          },
+          "triggerType": {
+            "type": "string",
+            "nullable": true
+          },
+          "triggerState": {
+            "type": "string",
+            "nullable": true
+          },
+          "triggerDefn": {
+            "type": "string",
+            "nullable": true
+          },
+          "description": {
+            "type": "string",
+            "nullable": true
+          },
+          "minValue": {
+            "type": "number",
+            "format": "double",
+            "nullable": true
+          },
+          "maxValue": {
+            "type": "number",
+            "format": "double",
+            "nullable": true
+          },
+          "triggerTypeId": {
+            "type": "integer",
+            "format": "int32",
+            "nullable": true
+          },
+          "triggerStateId": {
+            "type": "integer",
+            "format": "int32",
+            "nullable": true
+          },
+          "promotionId": {
+            "type": "integer",
+            "format": "int32",
+            "nullable": true
+          },
+          "sequence": {
+            "type": "integer",
+            "format": "int32",
+            "nullable": true
+          },
+          "sharing": {
+            "type": "integer",
+            "format": "int32",
+            "nullable": true
+          },
+          "shareState": {
+            "type": "integer",
+            "format": "int32",
+            "nullable": true
+          },
+          "operability": {
+            "type": "integer",
+            "format": "int32",
+            "nullable": true
+          },
+          "logging": {
+            "type": "integer",
+            "format": "int32",
+            "nullable": true
+          },
+          "scheduleId": {
+            "type": "integer",
+            "format": "int32",
+            "nullable": true
+          },
+          "systemId": {
+            "type": "integer",
+            "format": "int32",
+            "nullable": true
+          },
+          "venueId": {
+            "type": "integer",
+            "format": "int32",
+            "nullable": true
+          },
+          "parentId": {
+            "type": "integer",
+            "format": "int32",
+            "nullable": true
+          },
+          "mediaId": {
+            "type": "integer",
+            "format": "int32",
+            "nullable": true
+          },
+          "ownerId": {
+            "type": "integer",
+            "format": "int32",
+            "nullable": true
+          },
+          "logId": {
+            "type": "integer",
+            "format": "int32",
+            "nullable": true
+          }
+        },
+        "additionalProperties": false
+      },
+      "TriggerRequest": {
+        "type": "object",
+        "properties": {
+          "actionType": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "vendor": {
+            "type": "string",
+            "nullable": true
+          },
+          "location": {
+            "type": "string",
+            "nullable": true
+          },
+          "trigger": {
+            "$ref": "#/components/schemas/Trigger"
+          }
+        },
+        "additionalProperties": false
+      }
+    },
+    "securitySchemes": {
+      "Bearer": {
+        "type": "http",
+        "description": "Bearer Authentication with JWT Token",
+        "scheme": "Bearer",
+        "bearerFormat": "JWT"
+      }
+    }
+  },
+  "security": [
+    {
+      "Bearer": [ ]
+    }
+  ]
+}

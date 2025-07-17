@@ -1,0 +1,17 @@
+﻿<my:NxControlBase 
+    
+    x:Class="nexus.plugins.main.PanelButton"
+
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+    
+    xmlns:my="using:nexus.common.control" 
+    
+    mc:Ignorable="d" d:DesignHeight="30" d:DesignWidth="80.352">
+    <Grid>
+        <my:NxButton x:Name="Button" VerticalAlignment="Top" PictureVisible="False" Prompt="" PromptHorizontalAlignment="Center" PictureHeight="16" PictureWidth="16" Height="30" ButtonType="Tab" PromptVerticalAlignment="Center"  />
+        <my:NxImage x:Name="Image" Margin="0,0,0,18" Picture="cross" ImageHeight="12" ImageWidth="12" HorizontalAlignment="Left"/>
+    </Grid>
+</my:NxControlBase>

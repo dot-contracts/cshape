@@ -1,0 +1,38 @@
+﻿<ResourceDictionary
+    
+   
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:nexus.common.control"    
+    >
+
+    <Style TargetType="local:NxList">
+        <Setter Property="Template">
+            <Setter.Value>
+                <ControlTemplate TargetType="local:NxList">
+                    <StackPanel>
+                        <!-- Named PARTs we rely on in OnApplyTemplate -->
+                        <Grid x:Name="PART_HeaderGrid" />
+
+                        <!-- Where each row is built (no ItemsRepeater) -->
+                        <ScrollViewer>
+                            <StackPanel x:Name="PART_RowsPanel" />
+                        </ScrollViewer> 
+
+                        <!-- Summaries -->
+                        <StackPanel x:Name="PART_SummaryPanel"
+                                    Orientation="Horizontal"
+                                    Margin="4" />
+
+                        <!-- Pager -->
+                        <StackPanel x:Name="PART_PagerPanel"
+                                    Orientation="Horizontal"
+                                    Margin="4" />
+                    </StackPanel>
+                </ControlTemplate>
+            </Setter.Value>
+        </Setter>
+    </Style>
+
+
+</ResourceDictionary>

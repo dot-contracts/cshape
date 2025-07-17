@@ -1,0 +1,126 @@
+﻿<Project Sdk="Uno.Sdk">
+  <PropertyGroup>
+    <TargetFrameworks>net9.0;net9.0-ios;net9.0-android;net9.0-windows10.0.26100;net9.0-browserwasm;net9.0-desktop</TargetFrameworks>
+    <UnoSingleProject>true</UnoSingleProject>
+    <OutputType>Library</OutputType>
+    <!-- Ensures the .xr.xml files are generated in a proper layout folder -->
+    <GenerateLibraryLayout>true</GenerateLibraryLayout>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+
+    <!--
+      UnoFeatures let's you quickly add and manage implicit package references based on the features you want to use.
+      https://aka.platform.uno/singleproject-features
+    -->
+    <!--
+    <UnoFeatures></UnoFeatures>
+    -->
+  </PropertyGroup>
+
+  <ItemGroup Condition="$([MSBuild]::GetTargetPlatformIdentifier('$(TargetFramework)')) == 'windows'">
+    <!--
+    If you encounter this error message:
+
+      error NETSDK1148: A referenced assembly was compiled using a newer version of Microsoft.Windows.SDK.NET.dll.
+      Please update to a newer .NET SDK in order to reference this assembly.
+
+    This means that the two packages below must be aligned with the "build" version number of
+    the "Microsoft.Windows.SDK.BuildTools" package above, and the "revision" version number
+    must be the highest found in https://www.nuget.org/packages/Microsoft.Windows.SDK.NET.Ref.
+    -->
+    <!-- <FrameworkReference Update="Microsoft.Windows.SDK.NET.Ref" RuntimeFrameworkVersion="10.0.22621.28" />
+    <FrameworkReference Update="Microsoft.Windows.SDK.NET.Ref" TargetingPackVersion="10.0.22621.28" /> -->
+  </ItemGroup>
+
+  <ItemGroup>
+    <Compile Remove="Cache\**" />
+    <Compile Remove="Data\**" />
+    <Compile Remove="Provider\**" />
+    <Compile Remove="Service\**" />
+    <EmbeddedResource Remove="Cache\**" />
+    <EmbeddedResource Remove="Data\**" />
+    <EmbeddedResource Remove="Provider\**" />
+    <EmbeddedResource Remove="Service\**" />
+    <None Remove="Cache\**" />
+    <None Remove="Data\**" />
+    <None Remove="Provider\**" />
+    <None Remove="Service\**" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.AspNetCore.Authorization" Version="9.0.6" />
+    <PackageReference Include="Microsoft.AspNetCore.Mvc" Version="2.3.0" />
+    <PackageReference Include="Newtonsoft.Json" Version="13.0.3" />
+    <PackageReference Include="System.IdentityModel.Tokens.Jwt" Version="8.12.1" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\..\framework\nexus.common\nexus.common.csproj" />
+    <ProjectReference Include="..\..\shared\nexus.shared.common\nexus.shared.common.csproj" />
+    <ProjectReference Include="..\..\shared\nexus.shared.local\nexus.shared.local.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <UpToDateCheckInput Remove="Data\**" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Content Remove="Data\**" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Page Remove="Data\**" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PRIResource Remove="Data\**" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <UpToDateCheckInput Remove="Provider\**" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Content Remove="Provider\**" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Page Remove="Provider\**" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PRIResource Remove="Provider\**" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <UpToDateCheckInput Remove="Service\**" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Content Remove="Service\**" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Page Remove="Service\**" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PRIResource Remove="Service\**" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <UpToDateCheckInput Remove="Cache\**" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Content Remove="Cache\**" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Page Remove="Cache\**" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PRIResource Remove="Cache\**" />
+  </ItemGroup>
+</Project>

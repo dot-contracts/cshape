@@ -1,0 +1,10 @@
+{
+  "background_color": "#ffffff",
+  "description": "nexus.plugins.test",
+  "display": "standalone",
+  "name": "nexus.plugins.test",
+  "short_name": "nexus.plugins.test",
+  "start_url": "/index.html",
+  "theme_color": "#ffffff",
+  "scope": "/"
+}

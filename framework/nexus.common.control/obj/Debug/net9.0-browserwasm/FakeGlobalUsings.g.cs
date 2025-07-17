@@ -1,0 +1,16 @@
+namespace System { class __HotReloadWorkaround__nexus_common_controls { } }
+namespace System.Collections.Generic { class __HotReloadWorkaround__nexus_common_controls { } }
+namespace System.IO { class __HotReloadWorkaround__nexus_common_controls { } }
+namespace System.Linq { class __HotReloadWorkaround__nexus_common_controls { } }
+namespace System.Net.Http { class __HotReloadWorkaround__nexus_common_controls { } }
+namespace System.Threading { class __HotReloadWorkaround__nexus_common_controls { } }
+namespace System.Threading.Tasks { class __HotReloadWorkaround__nexus_common_controls { } }
+namespace System.Windows.Input { class __HotReloadWorkaround__nexus_common_controls { } }
+namespace Windows.Networking.Connectivity { class __HotReloadWorkaround__nexus_common_controls { } }
+namespace Windows.Storage { class __HotReloadWorkaround__nexus_common_controls { } }
+namespace Microsoft.UI.Xaml { class __HotReloadWorkaround__nexus_common_controls { } }
+namespace Microsoft.UI.Xaml.Controls { class __HotReloadWorkaround__nexus_common_controls { } }
+namespace Microsoft.UI.Xaml.Media { class __HotReloadWorkaround__nexus_common_controls { } }
+namespace Microsoft.UI.Xaml.Navigation { class __HotReloadWorkaround__nexus_common_controls { } }
+namespace Uno.UI { class __HotReloadWorkaround__nexus_common_controls { } }
+namespace Windows.ApplicationModel { class __HotReloadWorkaround__nexus_common_controls { } }

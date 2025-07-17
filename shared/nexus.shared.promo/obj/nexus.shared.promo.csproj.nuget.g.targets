@@ -1,0 +1,9 @@
+﻿<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<Project ToolsVersion="14.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ImportGroup Condition=" '$(TargetFramework)' == 'net9.0' AND '$(ExcludeRestorePackageImports)' != 'true' ">
+    <Import Project="$(NuGetPackageRoot)uno.winui\6.0.797\buildTransitive\net8.0\uno.winui.targets" Condition="Exists('$(NuGetPackageRoot)uno.winui\6.0.797\buildTransitive\net8.0\uno.winui.targets')" />
+    <Import Project="$(NuGetPackageRoot)uno.settings.devserver\1.3.12\buildTransitive\Uno.Settings.DevServer.targets" Condition="Exists('$(NuGetPackageRoot)uno.settings.devserver\1.3.12\buildTransitive\Uno.Settings.DevServer.targets')" />
+    <Import Project="$(NuGetPackageRoot)uno.sdk.extras\5.6.3\buildTransitive\Uno.Sdk.Extras.targets" Condition="Exists('$(NuGetPackageRoot)uno.sdk.extras\5.6.3\buildTransitive\Uno.Sdk.Extras.targets')" />
+    <Import Project="$(NuGetPackageRoot)uno.resizetizer\1.8.1\build\Uno.Resizetizer.targets" Condition="Exists('$(NuGetPackageRoot)uno.resizetizer\1.8.1\build\Uno.Resizetizer.targets')" />
+  </ImportGroup>
+</Project>

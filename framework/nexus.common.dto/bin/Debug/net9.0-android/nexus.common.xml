@@ -1,0 +1,149 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>nexus.common</name>
+    </assembly>
+    <members>
+        <member name="T:nexus.common.helper.IValueRows">
+            <summary>Represents a nongeneric collection of IValueCol collections of key/value pairs</summary>
+        </member>
+        <member name="M:nexus.common.helper.IValueRows.Reset">
+            <summary>Removes all elements from the IValueRows object</summary>
+            <exception cref="T:System.NotSupportedException">Whenever encountering any IValueCols object having a <paramref name="State"/> other than ReadWriteDelete</exception>
+        </member>
+        <member name="T:nexus.common.helper.IValueCols">
+            <summary>Represents a nongeneric collection of key/value pairs</summary>
+        </member>
+        <member name="P:nexus.common.helper.IValueCols.IsFixedSize">
+            <summary>Gets a value indicating whether the IValueCols object has a fixed size (unalterable number of columns)</summary>
+        </member>
+        <member name="P:nexus.common.helper.IValueCols.IsReadOnly">
+            <summary>Gets a value indicating whether the IValueCols object is read-only</summary>
+        </member>
+        <member name="P:nexus.common.helper.IValueCols.Keys">
+            <summary>Gets an System.Collections.ICollection object containing the keys of the IValueCols object</summary>
+        </member>
+        <member name="P:nexus.common.helper.IValueCols.Values">
+            <summary>Gets an System.Collections.ICollection object containing the values in the IValueCols object</summary>
+        </member>
+        <member name="P:nexus.common.helper.IValueCols.Item(System.String)">
+            <summary>Gets or sets the element associated with the specified key</summary>
+            <param name="key">The key of the element to get or set</param>
+            <returns>The value object associated with the specified key</returns>
+            <exception cref="T:System.ArgumentNullException">key is null</exception>
+            <exception cref="T:System.NotSupportedException">The property is set and the IValueCols object is read-only</exception>
+            <exception cref="T:System.NotSupportedException">The property is set and the key does not exist in the collection and the IValueCols object has a fixed size.</exception>
+        </member>
+        <member name="M:nexus.common.helper.IValueCols.Add(System.String,System.Object)">
+            <summary>Adds an element with the provided key and value to the IValueCols object</summary>
+            <param name="key"  >The String to use as the key of the element to add</param>
+            <param name="value">The Object to use as the key of the element to add</param>
+            <exception cref="T:System.ArgumentNullException">key is null</exception>
+            <exception cref="T:System.ArgumentException">key is not a String</exception>
+            <exception cref="T:System.ArgumentException">An element with the same key already exists in the IValueCols object</exception>
+            <exception cref="T:System.NotSupportedException">The IValueCols object has a fixed size or the ?NameValueItem element is read-only?</exception>
+        </member>
+        <member name="M:nexus.common.helper.IValueCols.Add(System.String,System.Object,nexus.common.helper.ValueItemStatus)">
+            <summary>Adds an element with the provided key and value to the IValueCols object</summary>
+            <param name="key"   >The String to use as the key of the element to add</param>
+            <param name="value" >The Object to use as the value of the element to add</param>
+            <param name="status">The ValueItemStatus to use as the status of the element to add</param>
+            <exception cref="T:System.ArgumentNullException">key is null</exception>
+            <exception cref="T:System.ArgumentException">key is not a String</exception>
+            <exception cref="T:System.ArgumentException">An element with the same key already exists in the IValueCols object</exception>
+            <exception cref="T:System.NotSupportedException">The IValueCols object has a fixed size or the ?NameValueItem element is read-only?</exception>
+        </member>
+        <member name="M:nexus.common.helper.IValueCols.Clear">
+            <summary>Removes all elements from the IValueCols object</summary>
+            <exception cref="T:System.NotSupportedException">Whenever encountering any IValueCols object having a <paramref name="State"/> other than ReadWriteDelete</exception>
+        </member>
+        <member name="M:nexus.common.helper.IValueCols.Contains(System.String)">
+            <summary>Determines whether the IValueCols object contains an element with the specified key</summary>
+            <param name="key">The key to locate in the IValueSet object</param>
+            <returns>true if the IValueCols object contains an element with the key otherwise false</returns>
+            <exception cref="T:System.ArgumentNullException">key is null</exception>
+            <exception cref="T:System.ArgumentException">key is not a String</exception>
+        </member>
+        <member name="M:nexus.common.helper.IValueCols.GetEnumerator">
+            <summary>Returns an IValueColsEnumerator object for the IValueCols object</summary>
+            <returns>An IValueColsEnumerator object for the IValueCols object</returns>
+        </member>
+        <member name="M:nexus.common.helper.IValueCols.Remove(System.String)">
+            <summary>Removes the element with the specified key from the IValueCols object</summary>
+            <param name="key">The key of the element to remove</param>
+            <exception cref="T:System.ArgumentNullException">key is null</exception>
+            <exception cref="T:System.ArgumentException">key is not a String</exception>
+            <exception cref="T:System.NotSupportedException">The IValueCols object has a fixed size or the ?NameValueItem element is read-only?</exception>
+        </member>
+        <member name="M:nexus.common.helper.Currency.Words(System.Int32)">
+            <summary>
+            Converts currency value into a word string
+            </summary>
+            <param name="val">The currency value to convert</param>
+            <returns>The string detailing the value in words</returns>
+        </member>
+        <member name="M:nexus.common.helper.Currency.WordBlocks(System.Int32)">
+            <summary>
+            Converts currency value into a word blocks for hundthou, thou, hund, dolars and cents
+            </summary>
+            <param name="val">The currency value to convert</param>
+            <returns>The string[] listing the block word values</returns>
+        </member>
+        <member name="M:nexus.common.helper.Currency.WordDigits(System.Int32,System.Int32)">
+            <summary>
+            Converts currency into digit words for the dollars and a word block for cents
+            </summary>
+            <param name="val">The currency value to convert</param>
+            <param name="digit">The number of digits (plus cents) to convert</param>
+            <returns>The string[] listing the digit words</returns>
+        </member>
+        <member name="T:nexus.common.helper.LogWriter">
+            <summary>
+            Implementation of a file-based log writer.
+            </summary>
+        </member>
+        <member name="P:nexus.common.helper.LogWriter.IsEnabled">
+            <summary>Controls all logging activity</summary>
+        </member>
+        <member name="P:nexus.common.helper.LogWriter.IsError">
+            <summary>Indicates if a logging error has occurred</summary>
+        </member>
+        <member name="P:nexus.common.helper.LogWriter.IsTimeStamped">
+            <summary>Controls whether a timestamp is prefixed to all messages</summary>
+        </member>
+        <member name="P:nexus.common.helper.LogWriter.IsThreadId">
+            <summary>Controls whether a thread ID is prefixed to all messages</summary>
+        </member>
+        <member name="M:nexus.common.helper.LogWriter.WriteAppend(System.String)">
+            <summary>
+            Appends a message to the current log file
+            </summary>
+            <param name="txt">The message text to be appended</param>
+        </member>
+        <member name="M:nexus.common.ConvertStr.GetBytes(System.String)">
+            <summary>
+            Converts a Unicode string to a byte[] string image
+            </summary>
+            <param name="str">Unicode string of arbitrary length</param>
+            <returns>Converted Byte[] without any cleanup</returns>
+        </member>
+        <member name="M:nexus.common.ConvertStr.ToString(System.Byte[])">
+            <summary>
+            Converts a byte[] string image to a Unicode string
+            </summary>
+            <param name="fs">Byte[] of arbitrary length</param>
+            <returns>Converted Unicode string without any cleanup</returns>
+        </member>
+        <member name="T:nexus.common.Resource">
+            <summary>
+            Android Resource Designer class.
+            Exposes the Android Resource designer assembly into the project Namespace.
+            </summary>
+        </member>
+        <member name="T:nexus.common.GlobalStaticResources">
+            <summary>
+            Contains all the static resources defined for the application
+            </summary>
+        </member>
+    </members>
+</doc>

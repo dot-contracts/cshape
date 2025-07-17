@@ -1,0 +1,10 @@
+<controls:NxDialogBase
+    
+    x:Class="nexus.common.control.NxMessageBox"
+    
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+
+    xmlns:controls="using:nexus.common.control" >
+    
+</controls:NxDialogBase>

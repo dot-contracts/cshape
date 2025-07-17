@@ -1,0 +1,57 @@
+﻿<Project Sdk="Uno.Sdk">
+  <PropertyGroup>
+    <TargetFrameworks>net9.0-browserwasm;net9.0-desktop</TargetFrameworks>
+
+    <OutputType>Exe</OutputType>
+    <UnoSingleProject>true</UnoSingleProject>
+
+    <!-- Display name -->
+    <ApplicationTitle>nexus.plugins.floor</ApplicationTitle>
+    <!-- App Identifier -->
+    <ApplicationId>com.companyname.nexus.plugins.floor</ApplicationId>
+    <!-- Versions -->
+    <ApplicationDisplayVersion>1.0</ApplicationDisplayVersion>
+    <ApplicationVersion>1</ApplicationVersion>
+    <!-- Package Publisher -->
+    <ApplicationPublisher>davew</ApplicationPublisher>
+    <!-- Package Description -->
+    <Description>nexus.plugins.floor powered by Uno Platform.</Description>
+
+    <!--
+      UnoFeatures let's you quickly add and manage implicit package references based on the features you want to use.
+      https://aka.platform.uno/singleproject-features
+    -->
+    <UnoFeatures>
+      Material;
+      Toolkit;
+      MVUX;
+      SkiaRenderer;
+    </UnoFeatures>
+  </PropertyGroup>
+  <ItemGroup>
+    <Compile Remove="MainPage.xaml.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <Page Update="Panels\BadgeNo.xaml">
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+  </ItemGroup>
+  <ItemGroup>
+    <Page Update="Panels\DashBoard.xaml">
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+  </ItemGroup>
+  <ItemGroup>
+    <Page Update="Panels\HouseNo.xaml">
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\..\..\framework\nexus.common.chart\nexus.common.chart.csproj" />
+    <ProjectReference Include="..\..\..\framework\nexus.common.control\nexus.common.control.csproj" />
+    <ProjectReference Include="..\..\..\framework\nexus.common\nexus.common.csproj" />
+    <ProjectReference Include="..\..\..\shared\nexus.shared.common\nexus.shared.common.csproj" />
+    <ProjectReference Include="..\..\..\shared\nexus.shared.gaming\nexus.shared.gaming.csproj" />
+  </ItemGroup>
+
+</Project>

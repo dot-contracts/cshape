@@ -1,0 +1,37 @@
+﻿<ResourceDictionary
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:nexus.common.control">
+
+    <Style TargetType="local:NxMenuGroup">
+        <Setter Property="Background" Value="{ThemeResource NxMenuGroupBack}" />
+        <Setter Property="Template">
+            <Setter.Value>
+                <ControlTemplate TargetType="local:NxMenuGroup">
+                    <Border x:Name="Border"
+                            Background="{TemplateBinding Background}"
+                            CornerRadius="6"
+                            Margin="4"
+                            Padding="0">
+                        <Grid>
+                            <local:NxMenuCaption x:Name="Caption"
+                                                 Height="30"
+                                                 Prompt="nxMenuCaption"
+                                                 VerticalAlignment="Top"
+                                                 PromptHorizontalAlignment="Center" 
+                                                 PromptVerticalAlignment="Center"
+                                                 
+                                                 Background="{ThemeResource NxMenuCaptionBack}"
+                                                 PromptForeColor="{ThemeResource NxMenuCaptionFore}" />
+
+                            <StackPanel x:Name="Stacker"
+                                        Margin="0,35,0,0"
+                                        Spacing="2"
+                                        Background="{ThemeResource NxMenuItemBack}" />
+                        </Grid>
+                    </Border>
+                </ControlTemplate>
+            </Setter.Value>
+        </Setter>
+    </Style>
+</ResourceDictionary>

@@ -1,0 +1,10 @@
+{
+  "background_color": "#ffffff",
+  "description": "nexus.plugins.floor",
+  "display": "standalone",
+  "name": "nexus.plugins.floor",
+  "short_name": "nexus.plugins.floor",
+  "start_url": "/index.html",
+  "theme_color": "#ffffff",
+  "scope": "/"
+}

@@ -1,0 +1,148 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>nexus.plugins.main</name>
+    </assembly>
+    <members>
+        <member name="T:nexus.plugins.main.BotPanel">
+            <summary>
+            Interaction logic for TopPanel.xaml
+            </summary>
+        </member>
+        <member name="M:nexus.plugins.main.BotPanel.#ctor(System.IntPtr,Android.Runtime.JniHandleOwnership)">
+            <summary>
+            Native constructor, do not use explicitly.
+            </summary>
+            <remarks>
+            Used by the Xamarin Runtime to materialize native 
+            objects that may have been collected in the managed world.
+            </remarks>
+        </member>
+        <member name="T:nexus.plugins.main.PanelButton">
+            <summary>
+            Interaction logic for TopPanel.xaml
+            </summary>
+        </member>
+        <member name="M:nexus.plugins.main.PanelButton.#ctor(System.IntPtr,Android.Runtime.JniHandleOwnership)">
+            <summary>
+            Native constructor, do not use explicitly.
+            </summary>
+            <remarks>
+            Used by the Xamarin Runtime to materialize native 
+            objects that may have been collected in the managed world.
+            </remarks>
+        </member>
+        <member name="T:nexus.plugins.main.TopPanel">
+            <summary>
+            Interaction logic for TopPanel.xaml
+            </summary>
+        </member>
+        <member name="M:nexus.plugins.main.TopPanel.#ctor(System.IntPtr,Android.Runtime.JniHandleOwnership)">
+            <summary>
+            Native constructor, do not use explicitly.
+            </summary>
+            <remarks>
+            Used by the Xamarin Runtime to materialize native 
+            objects that may have been collected in the managed world.
+            </remarks>
+        </member>
+        <member name="M:nexus.plugins.main.MainUI.#ctor(System.IntPtr,Android.Runtime.JniHandleOwnership)">
+            <summary>
+            Native constructor, do not use explicitly.
+            </summary>
+            <remarks>
+            Used by the Xamarin Runtime to materialize native 
+            objects that may have been collected in the managed world.
+            </remarks>
+        </member>
+        <member name="M:nexus.plugins.main.piLog.#ctor(System.IntPtr,Android.Runtime.JniHandleOwnership)">
+            <summary>
+            Native constructor, do not use explicitly.
+            </summary>
+            <remarks>
+            Used by the Xamarin Runtime to materialize native 
+            objects that may have been collected in the managed world.
+            </remarks>
+        </member>
+        <member name="M:nexus.plugins.main.piLogin.#ctor(System.IntPtr,Android.Runtime.JniHandleOwnership)">
+            <summary>
+            Native constructor, do not use explicitly.
+            </summary>
+            <remarks>
+            Used by the Xamarin Runtime to materialize native 
+            objects that may have been collected in the managed world.
+            </remarks>
+        </member>
+        <member name="T:nexus.plugins.main.Login">
+            <summary>
+            Interaction logic for Window2.xaml
+            </summary>
+        </member>
+        <member name="M:nexus.plugins.main.Login.#ctor(System.IntPtr,Android.Runtime.JniHandleOwnership)">
+            <summary>
+            Native constructor, do not use explicitly.
+            </summary>
+            <remarks>
+            Used by the Xamarin Runtime to materialize native 
+            objects that may have been collected in the managed world.
+            </remarks>
+        </member>
+        <member name="T:nexus.plugins.main.NoConnect">
+            <summary>
+            Interaction logic for NoConnect.xaml
+            </summary>
+        </member>
+        <member name="M:nexus.plugins.main.NoConnect.#ctor(System.IntPtr,Android.Runtime.JniHandleOwnership)">
+            <summary>
+            Native constructor, do not use explicitly.
+            </summary>
+            <remarks>
+            Used by the Xamarin Runtime to materialize native 
+            objects that may have been collected in the managed world.
+            </remarks>
+        </member>
+        <member name="T:nexus.plugins.main.Progress">
+            <summary>
+            Interaction logic for NoConnect.xaml
+            </summary>
+        </member>
+        <member name="M:nexus.plugins.main.Progress.#ctor(System.IntPtr,Android.Runtime.JniHandleOwnership)">
+            <summary>
+            Native constructor, do not use explicitly.
+            </summary>
+            <remarks>
+            Used by the Xamarin Runtime to materialize native 
+            objects that may have been collected in the managed world.
+            </remarks>
+        </member>
+        <member name="T:nexus.plugins.main.Resource">
+            <summary>
+            Android Resource Designer class.
+            Exposes the Android Resource designer assembly into the project Namespace.
+            </summary>
+        </member>
+        <member name="T:nexus.plugins.main.__Sources__.EmbeddedXamlSourcesProvider">
+            <summary>
+            Provides access to the embedded XAML sources
+            </summary>
+            <remarks>
+            This class is used to provide the embedded XAML sources to the Hot Reload engine.
+            This is not intended to be used directly by application code.
+            WON'T BE GENERATED ON RELEASE BUILDS
+            </remarks>
+        </member>
+        <member name="P:nexus.plugins.main.__Sources__.EmbeddedXamlSourcesProvider.UpdateCounter">
+            <summary>
+            Gets the current update counter, used to detect changes in the sources.
+            </summary>
+            <remarks>
+            This counter is incremented each time a Hot Reload sources update is detected.
+            </remarks>
+        </member>
+        <member name="T:nexus.plugins.main.GlobalStaticResources">
+            <summary>
+            Contains all the static resources defined for the application
+            </summary>
+        </member>
+    </members>
+</doc>

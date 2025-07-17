@@ -1,0 +1,14 @@
+F:\GitHub\nexus\Source\Services\nexus.api.members\obj\Debug\net9.0\nexus.api.members.csproj.AssemblyReference.cache
+F:\GitHub\nexus\Source\Services\nexus.api.members\obj\Debug\net9.0\UnoImage.stamp
+F:\GitHub\nexus\Source\Services\nexus.api.members\obj\Debug\net9.0\nexus.api.members.d-bfalse.GeneratedMSBuildEditorConfig.editorconfig
+F:\GitHub\nexus\Source\Services\nexus.api.members\obj\Debug\net9.0\nexus.api.members.AssemblyInfoInputs.cache
+F:\GitHub\nexus\Source\Services\nexus.api.members\obj\Debug\net9.0\nexus.api.members.AssemblyInfo.cs
+F:\GitHub\nexus\Source\Services\nexus.api.members\obj\Debug\net9.0\nexus.api.members.csproj.CoreCompileInputs.cache
+F:\GitHub\nexus\Source\Services\nexus.api.members\obj\Debug\net9.0\nexus.api.members.sourcelink.json
+E:\Projects\update\Source\Services\nexus.api.members\obj\Debug\net9.0\nexus.api.members.csproj.AssemblyReference.cache
+E:\Projects\update\Source\Services\nexus.api.members\obj\Debug\net9.0\UnoImage.stamp
+E:\Projects\update\Source\Services\nexus.api.members\obj\Debug\net9.0\nexus.api.members.d-bfalse.GeneratedMSBuildEditorConfig.editorconfig
+E:\Projects\update\Source\Services\nexus.api.members\obj\Debug\net9.0\nexus.api.members.AssemblyInfoInputs.cache
+E:\Projects\update\Source\Services\nexus.api.members\obj\Debug\net9.0\nexus.api.members.AssemblyInfo.cs
+E:\Projects\update\Source\Services\nexus.api.members\obj\Debug\net9.0\nexus.api.members.csproj.CoreCompileInputs.cache
+E:\Projects\update\Source\Services\nexus.api.members\obj\Debug\net9.0\nexus.api.members.sourcelink.json

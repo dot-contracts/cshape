@@ -1,0 +1,38 @@
+﻿<my:NxMainUIBase
+    
+    x:Class="nexus.plugins.main.MainUI"
+    
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+
+    xmlns:my="using:nexus.common.control" 
+    
+    mc:Ignorable="d" HorizontalAlignment="Stretch" VerticalAlignment="Stretch"  Width="1008"  Height="601"  >
+
+    <Grid  >
+
+        <Grid x:Name="TopBar" Background="#FF0058A3" Height="30" VerticalAlignment="Top" >
+            <my:NxButton x:Name="btnMenu" Prompt="Hide Menu" PromptFontSize="9" HorizontalAlignment="Left" Width="142" Margin="0"  />
+        </Grid>
+
+        <Grid HorizontalAlignment="Stretch" Margin="0,30,0,20"  >
+            <my:NxMenu x:Name="SideMenu" HorizontalAlignment="Left" Width="140" Margin="0,0,0,17"/>
+            <my:NxPluginTab x:Name="PluginHost" HorizontalAlignment="Left" VerticalAlignment="Stretch"  Height="Auto" Width="544" Margin="140,0,0,0"  >
+                <my:NxPluginTab.Background  Background="Aquamarine" >
+                    <ImageBrush ImageSource="logo.png" Stretch="Uniform"/>
+                </my:NxPluginTab.Background>
+            </my:NxPluginTab>
+
+            <Grid x:Name="Panel" Margin="140,0,0,0" />
+
+            <my:NxCheck x:Name="chkDefault" Prompt="Set as Default" HorizontalAlignment="Left" VerticalAlignment="Bottom" Width="140" Foreground="White" PromptForeColor="White" Height="17"/>
+        </Grid>
+
+        <Grid x:Name="BotBar" Background="#FF0058A3" Height="20" VerticalAlignment="Bottom">
+            <my:NxButton x:Name="btnQuit" Prompt="Quit" PromptFontSize="9" BorderType="Delete" HorizontalAlignment="Left" Width="140"  />
+        </Grid>
+    </Grid>
+
+</my:NxMainUIBase>

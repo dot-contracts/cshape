@@ -1,0 +1,14 @@
+F:\GitHub\nexus\Source\framework\nexus.common.charts\bin\Debug\net9.0\nexus.common.charts.deps.json
+F:\GitHub\nexus\Source\framework\nexus.common.charts\bin\Debug\net9.0\nexus.common.charts.dll
+F:\GitHub\nexus\Source\framework\nexus.common.charts\bin\Debug\net9.0\nexus.common.charts.pdb
+F:\GitHub\nexus\Source\framework\nexus.common.charts\obj\Debug\net9.0\nexus.common.charts.csproj.AssemblyReference.cache
+F:\GitHub\nexus\Source\framework\nexus.common.charts\obj\Debug\net9.0\UnoImage.stamp
+F:\GitHub\nexus\Source\framework\nexus.common.charts\obj\Debug\net9.0\nexus.common.charts.d-bfalse.GeneratedMSBuildEditorConfig.editorconfig
+F:\GitHub\nexus\Source\framework\nexus.common.charts\obj\Debug\net9.0\nexus.common.charts.AssemblyInfoInputs.cache
+F:\GitHub\nexus\Source\framework\nexus.common.charts\obj\Debug\net9.0\nexus.common.charts.AssemblyInfo.cs
+F:\GitHub\nexus\Source\framework\nexus.common.charts\obj\Debug\net9.0\nexus.common.charts.csproj.CoreCompileInputs.cache
+F:\GitHub\nexus\Source\framework\nexus.common.charts\obj\Debug\net9.0\nexus.common.charts.sourcelink.json
+F:\GitHub\nexus\Source\framework\nexus.common.charts\obj\Debug\net9.0\nexus.common.charts.dll
+F:\GitHub\nexus\Source\framework\nexus.common.charts\obj\Debug\net9.0\refint\nexus.common.charts.dll
+F:\GitHub\nexus\Source\framework\nexus.common.charts\obj\Debug\net9.0\nexus.common.charts.pdb
+F:\GitHub\nexus\Source\framework\nexus.common.charts\obj\Debug\net9.0\ref\nexus.common.charts.dll

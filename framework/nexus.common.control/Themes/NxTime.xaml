@@ -1,0 +1,129 @@
+<ResourceDictionary
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:nexus.common.control">
+
+    <Style TargetType="local:NxTime">
+        <Setter Property="Template">
+            <Setter.Value>
+                <ControlTemplate TargetType="local:NxTime">
+                    <StackPanel Padding="1"
+                                MinWidth="200"
+                                MinHeight="200"
+                                Background="Transparent"
+                                Spacing="1">
+
+                        <!-- Hours -->
+                        <Grid x:Name="HourGrid" >
+                            <Grid.RowDefinitions>
+                                <RowDefinition/>
+                                <RowDefinition/>
+                                <RowDefinition  Height="5"/>
+                            </Grid.RowDefinitions>
+                            <Grid.ColumnDefinitions>
+                                <ColumnDefinition Width="Auto"/>
+                                <ColumnDefinition Width="Auto"/>
+                                <ColumnDefinition Width="Auto"/>
+                                <ColumnDefinition Width="Auto"/>
+                                <ColumnDefinition Width="Auto"/>
+                                <ColumnDefinition Width="Auto"/>
+                                <ColumnDefinition Width="Auto"/>
+                            </Grid.ColumnDefinitions>
+                            <local:NxButton x:Name="hb0"  Prompt="0" Grid.Row="0" Grid.Column="0" Margin="1"  PromptHorizontalAlignment="Center" PromptVerticalAlignment="Center"/>
+                            <local:NxButton x:Name="hb1"  Prompt="1" Grid.Row="0" Grid.Column="1" Margin="1"  PromptHorizontalAlignment="Center" PromptVerticalAlignment="Center"/>
+                            <local:NxButton x:Name="hb2"  Prompt="2" Grid.Row="0" Grid.Column="2" Margin="1"  PromptHorizontalAlignment="Center" PromptVerticalAlignment="Center"/>
+                            <local:NxButton x:Name="hb3"  Prompt="3" Grid.Row="0" Grid.Column="3" Margin="1"  PromptHorizontalAlignment="Center" PromptVerticalAlignment="Center"/>
+                            <local:NxButton x:Name="hb4"  Prompt="4" Grid.Row="0" Grid.Column="4" Margin="1"  PromptHorizontalAlignment="Center" PromptVerticalAlignment="Center"/>
+                            <local:NxButton x:Name="hb5"  Prompt="5" Grid.Row="0" Grid.Column="5" Margin="1"  PromptHorizontalAlignment="Center" PromptVerticalAlignment="Center"/>
+                            <local:NxButton x:Name="hb6"  Prompt="6" Grid.Row="0" Grid.Column="6" Margin="1"  PromptHorizontalAlignment="Center" PromptVerticalAlignment="Center"/>
+                            <local:NxButton x:Name="hb7"  Prompt="7" Grid.Row="1" Grid.Column="1" Margin="1"  PromptHorizontalAlignment="Center" PromptVerticalAlignment="Center"/>
+                            <local:NxButton x:Name="hb8"  Prompt="8" Grid.Row="1" Grid.Column="2" Margin="1"  PromptHorizontalAlignment="Center" PromptVerticalAlignment="Center"/>
+                            <local:NxButton x:Name="hb9"  Prompt="9" Grid.Row="1" Grid.Column="3" Margin="1"  PromptHorizontalAlignment="Center" PromptVerticalAlignment="Center"/>
+                            <local:NxButton x:Name="hb10" Prompt="10" Grid.Row="1" Grid.Column="4" Margin="1"  PromptHorizontalAlignment="Center" PromptVerticalAlignment="Center"/>
+                            <local:NxButton x:Name="hb11" Prompt="11" Grid.Row="1" Grid.Column="5" Margin="1"  PromptHorizontalAlignment="Center" PromptVerticalAlignment="Center"/>
+                            <local:NxButton x:Name="hb12" Prompt="12" Grid.Row="1" Grid.Column="6" Margin="1"  PromptHorizontalAlignment="Center" PromptVerticalAlignment="Center"/>
+                            <local:NxLabel  Prompt="Hour" Grid.Row="1" Grid.Column="0"  Grid.ColumnSpan="2" Margin="1"  PromptHorizontalAlignment="Left" PromptVerticalAlignment="Center"/>
+                            <local:NxLabel  Prompt=""     Grid.Row="2" Grid.Column="0" Margin="1"  PromptHorizontalAlignment="Center" PromptVerticalAlignment="Center"/>
+                        </Grid>
+
+                        <!-- Minutes -->
+                        <Grid x:Name="Min10Grid" >
+                            <Grid.ColumnDefinitions>
+                                <ColumnDefinition Width="Auto"/>
+                                <ColumnDefinition Width="Auto"/>
+                                <ColumnDefinition Width="Auto"/>
+                                <ColumnDefinition Width="Auto"/>
+                                <ColumnDefinition Width="Auto"/>
+                                <ColumnDefinition Width="Auto"/>
+                                <ColumnDefinition Width="Auto"/>
+                            </Grid.ColumnDefinitions>
+                            <local:NxLabel  Prompt="Minute" Grid.Column="0" Margin="1" Grid.ColumnSpan="2" PromptHorizontalAlignment="Left"  PromptVerticalAlignment="Center"/>
+                            <local:NxButton x:Name="mg00" Prompt="00" Grid.Column="1" Margin="1"  PromptHorizontalAlignment="Center" PromptVerticalAlignment="Center"/>
+                            <local:NxButton x:Name="mg10" Prompt="10" Grid.Column="2" Margin="1"  PromptHorizontalAlignment="Center" PromptVerticalAlignment="Center"/>
+                            <local:NxButton x:Name="mg20" Prompt="20" Grid.Column="3" Margin="1"  PromptHorizontalAlignment="Center" PromptVerticalAlignment="Center"/>
+                            <local:NxButton x:Name="mg30" Prompt="30" Grid.Column="4" Margin="1"  PromptHorizontalAlignment="Center" PromptVerticalAlignment="Center"/>
+                            <local:NxButton x:Name="mg40" Prompt="40" Grid.Column="5" Margin="1"  PromptHorizontalAlignment="Center" PromptVerticalAlignment="Center"/>
+                            <local:NxButton x:Name="mg50" Prompt="50" Grid.Column="6" Margin="1"  PromptHorizontalAlignment="Center" PromptVerticalAlignment="Center"/>
+                        </Grid>
+
+                        <!-- NumPad -->
+                        <Grid x:Name="MinGrid" >
+                            <Grid.RowDefinitions>
+                                <RowDefinition/>
+                                <RowDefinition/>
+                            </Grid.RowDefinitions>
+                            <Grid.ColumnDefinitions>
+                                <ColumnDefinition Width="Auto"/>
+                                <ColumnDefinition Width="Auto"/>
+                                <ColumnDefinition Width="Auto"/>
+                                <ColumnDefinition Width="Auto"/>
+                                <ColumnDefinition Width="Auto"/>
+                                <ColumnDefinition Width="Auto"/>
+                                <ColumnDefinition Width="Auto"/>
+                                <ColumnDefinition Width="Auto"/>
+                            </Grid.ColumnDefinitions>
+                            <local:NxButton x:Name="mm0" Prompt="0" Grid.Row="0" Grid.Column="2" Margin="1"  PromptHorizontalAlignment="Center" PromptVerticalAlignment="Center"/>
+                            <local:NxButton x:Name="mm1" Prompt="1" Grid.Row="0" Grid.Column="3" Margin="1"  PromptHorizontalAlignment="Center" PromptVerticalAlignment="Center"/>
+                            <local:NxButton x:Name="mm2" Prompt="2" Grid.Row="0" Grid.Column="4" Margin="1"  PromptHorizontalAlignment="Center" PromptVerticalAlignment="Center"/>
+                            <local:NxButton x:Name="mm3" Prompt="3" Grid.Row="0" Grid.Column="5" Margin="1"  PromptHorizontalAlignment="Center" PromptVerticalAlignment="Center"/>
+                            <local:NxButton x:Name="mm4" Prompt="4" Grid.Row="0" Grid.Column="6" Margin="1"  PromptHorizontalAlignment="Center" PromptVerticalAlignment="Center"/>
+                            <local:NxButton x:Name="mm5" Prompt="5" Grid.Row="1" Grid.Column="2" Margin="1"  PromptHorizontalAlignment="Center" PromptVerticalAlignment="Center"/>
+                            <local:NxButton x:Name="mm6" Prompt="6" Grid.Row="1" Grid.Column="3" Margin="1"  PromptHorizontalAlignment="Center" PromptVerticalAlignment="Center"/>
+                            <local:NxButton x:Name="mm7" Prompt="7" Grid.Row="1" Grid.Column="4" Margin="1"  PromptHorizontalAlignment="Center" PromptVerticalAlignment="Center"/>
+                            <local:NxButton x:Name="mm8" Prompt="8" Grid.Row="1" Grid.Column="5" Margin="1"  PromptHorizontalAlignment="Center" PromptVerticalAlignment="Center"/>
+                            <local:NxButton x:Name="mm9" Prompt="9" Grid.Row="1" Grid.Column="6" Margin="1"  PromptHorizontalAlignment="Center" PromptVerticalAlignment="Center"/>
+                        </Grid>
+
+                        <!-- AM/PM -->
+                        <Grid  x:Name="ampmGrid" >
+                            <Grid.ColumnDefinitions>
+                                <ColumnDefinition Width="Auto"/>
+                                <ColumnDefinition Width="Auto"/>
+                                <ColumnDefinition Width="Auto"/>
+                                <ColumnDefinition Width="Auto"/>
+                                <ColumnDefinition Width="Auto"/>
+                                <ColumnDefinition Width="Auto"/>
+                                <ColumnDefinition Width="Auto"/>
+                                <ColumnDefinition Width="Auto"/>
+                            </Grid.ColumnDefinitions>
+
+                            <local:NxLabel  x:Name="Result" PromptFontSize="16" Prompt="Time" Grid.Column="0" Grid.ColumnSpan="2" PromptVerticalAlignment="Center" Margin="1"  PromptHorizontalAlignment="Center" />
+                            <local:NxButton x:Name="btAM" Prompt="AM" Grid.Column="3" Grid.ColumnSpan="2" Margin="4"/>
+                            <local:NxButton x:Name="btPM" Prompt="PM" Grid.Column="5" Grid.ColumnSpan="2" Margin="4"/>
+                        </Grid>
+
+                        <!-- OK / Cancel -->
+                        <StackPanel Orientation="Horizontal"
+                                    HorizontalAlignment="Center"
+                                    x:Name="ButtonPanel"
+                                    Visibility="{TemplateBinding ShowButtons}"
+                                    Spacing="10">
+                            <local:NxButton x:Name="btnOK" Prompt="OK" MinWidth="100"/>
+                            <local:NxButton x:Name="btnCancel" Prompt="Cancel" MinWidth="100"/>
+                        </StackPanel>
+                    </StackPanel>
+                </ControlTemplate>
+            </Setter.Value>
+        </Setter>
+    </Style>
+</ResourceDictionary>

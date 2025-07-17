@@ -1,0 +1,114 @@
+[
+  {
+    "ContainingType": "nexus.api.gaming.apiCardPlay",
+    "Method": "Post",
+    "RelativePath": "gam/CardPlay",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "request",
+        "Type": "nexus.shared.gaming.CardPlayRequest",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "nexus.api.gaming.apiLiability",
+    "Method": "Post",
+    "RelativePath": "gam/Liability",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "request",
+        "Type": "nexus.shared.gaming.LiabilityRequest",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "nexus.api.gaming.apiLookUp",
+    "Method": "Post",
+    "RelativePath": "gam/LookUp",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "request",
+        "Type": "nexus.shared.gaming.LookUpRequest",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "nexus.api.gaming.apiPaging",
+    "Method": "Post",
+    "RelativePath": "gam/Paging",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "request",
+        "Type": "nexus.shared.gaming.PagingRequest",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "nexus.api.gaming.apiPayout",
+    "Method": "Post",
+    "RelativePath": "gam/Payout",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "request",
+        "Type": "nexus.shared.gaming.PayoutRequest",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "nexus.api.gaming.apiPlayer",
+    "Method": "Post",
+    "RelativePath": "gam/Player",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "request",
+        "Type": "nexus.shared.gaming.PlayerRequest",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "nexus.api.gaming.apiToday",
+    "Method": "Post",
+    "RelativePath": "gam/today",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "request",
+        "Type": "nexus.shared.gaming.TodayRequest",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  }
+]
