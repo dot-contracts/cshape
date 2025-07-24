@@ -44,15 +44,23 @@
                             PromptVerticalAlignment="Center" HorizontalAlignment="Stretch" 
                             PromptWidth="110" Grid.Column="1" Grid.Row="1" 
                             DropType="List" LoadlistOnDemand="False" AutoDrop="True"
+                            VerticalAlignment="Center"
+                            VerticalContentAlignment="Center"
                             List="Item1;Item2;Item3;Item4;Item5;Item6;Item7;Item8;Item9;Item10;Item11;Item12;Item13;Item14;Item15;Item16;Item17;Item18;Item19;Item20" />
             <my:NxComboEdit x:Name="cbDateType" Prompt="Date State:" Width="Auto" 
                             PromptVerticalAlignment="Center" HorizontalAlignment="Stretch" 
                             PromptWidth="110" Grid.Column="1" Grid.Row="2" 
-                            DropType="Date" LoadlistOnDemand="False" AutoDrop="True" />
+                            DropType="Date" LoadlistOnDemand="False" AutoDrop="True"
+                            ReplyVerticalAlignment="Center"
+                            VerticalAlignment="Center"
+                            VerticalContentAlignment="Center" />
             <my:NxComboEdit x:Name="cbTimeType" Prompt="Time Type:" Width="Auto" 
                             PromptVerticalAlignment="Center" HorizontalAlignment="Stretch" 
                             PromptWidth="110" Grid.Column="1" Grid.Row="3" 
-                            DropType="Time" LoadlistOnDemand="False" AutoDrop="True" /> 
+                            DropType="Time" LoadlistOnDemand="False" AutoDrop="True"
+                            ReplyVerticalAlignment="Center"
+                            VerticalAlignment="Center"
+                            VerticalContentAlignment="Center" /> 
             <my:NxCheck     x:Name="ckAutoDraw"      Prompt="CheckBox:"      Width="Auto" PromptVerticalAlignment="Center" HorizontalAlignment="Stretch"  PromptWidth="110"   Grid.Column="1" Grid.Row="4"   /> 
             <my:NxTextEdit  x:Name="txAlpha"         Prompt="Alpha Only:"    Width="Auto" PromptVerticalAlignment="Center" HorizontalAlignment="Stretch"  PromptWidth="110"   Grid.Column="1" Grid.Row="5" MaskType="AlphaOnly"   /> 
             <my:NxTextEdit  x:Name="txNumeric"       Prompt="Numeric Only:"  Width="Auto" PromptVerticalAlignment="Center" HorizontalAlignment="Stretch"  PromptWidth="110"   Grid.Column="1" Grid.Row="6" MaskType="NumericOnly"   /> 

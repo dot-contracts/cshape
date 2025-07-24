@@ -49,13 +49,50 @@ namespace nexus.plugins.floor
                     break;
 
                 case 1:
-
-
+                    // Initialize combo boxes
+                    InitializeComboBoxes();
+                    LoadState++;
                     break;
 
                 default:
                     LoadState = MaxLoadLoops;
                     break;
+            }
+        }
+
+        private void InitializeComboBoxes()
+        {
+            // Initialize List Type combo box
+            if (cbListType != null)
+            {
+                cbListType.DropType = NxComboBase.DropTypes.List;
+                cbListType.AutoDrop = true;
+                cbListType.LoadlistOnDemand = false;
+                cbListType.ReplyVerticalAlignment = VerticalAlignment.Center;
+                cbListType.VerticalAlignment = VerticalAlignment.Center;
+                cbListType.VerticalContentAlignment = VerticalAlignment.Center;
+            }
+
+            // Initialize Date Type combo box
+            if (cbDateType != null)
+            {
+                cbDateType.DropType = NxComboBase.DropTypes.Date;
+                cbDateType.AutoDrop = true;
+                cbDateType.LoadlistOnDemand = false;
+                cbDateType.ReplyVerticalAlignment = VerticalAlignment.Center;
+                cbDateType.VerticalAlignment = VerticalAlignment.Center;
+                cbDateType.VerticalContentAlignment = VerticalAlignment.Center;
+            }
+
+            // Initialize Time Type combo box
+            if (cbTimeType != null)
+            {
+                cbTimeType.DropType = NxComboBase.DropTypes.Time;
+                cbTimeType.AutoDrop = true;
+                cbTimeType.LoadlistOnDemand = false;
+                cbTimeType.ReplyVerticalAlignment = VerticalAlignment.Center;
+                cbTimeType.VerticalAlignment = VerticalAlignment.Center;
+                cbTimeType.VerticalContentAlignment = VerticalAlignment.Center;
             }
         }
 
