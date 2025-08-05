@@ -1,4 +1,4 @@
-﻿using nexus.api.Model.Local;
+﻿using nexus.shared.local;
 
 namespace nexus.api.Model.Membership
 {
