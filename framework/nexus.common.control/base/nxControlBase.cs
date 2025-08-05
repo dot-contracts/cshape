@@ -21,7 +21,19 @@ namespace nexus.common.control
     public partial class NxControlBase : ContentControl, IControl
     {
         private bool   mAccessSet = false;
-        private string mActionCode = "";    public string ActionCode {  get { return mActionCode; }  set {  if (!string.IsNullOrEmpty(value)) {  mAccessSet = true; mActionCode = value;  } } }
+        private string mActionCode = "";
+        public string ActionCode
+        {
+            get { return mActionCode; }
+            set
+            {
+                if (!string.IsNullOrEmpty(value))
+                {
+                    mAccessSet = true;
+                    mActionCode = value;
+                }
+            }
+        }
         private bool   mIsChanged  = false; public bool IsChanged { get { return mIsChanged; } set { mIsChanged = value; } }//  if (OnChange != null)   OnChange("", mIsChanged,mIsChanged); } }
 
         public string  FunctionId   { get; set; } = string.Empty;

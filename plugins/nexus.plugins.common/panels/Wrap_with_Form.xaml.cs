@@ -105,7 +105,7 @@ namespace nexus.plugins.common
             else                   System.Diagnostics.Debug.WriteLine("❌ WrapPanel is not defined.");
         }
 
-        public async Task AnimateForm(bool show, int ShowState=0) // showstate=0 for edit, 1 for create
+        public async Task AnimateForm(bool show, int ShowState = 0) // showstate=0 for edit, 1 for create
         {
             if (FormColumn == null || FormPanel == null || Wrapper == null)
             {

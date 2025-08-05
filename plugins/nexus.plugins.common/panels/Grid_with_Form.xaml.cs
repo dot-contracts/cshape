@@ -142,7 +142,7 @@ namespace nexus.plugins.common
             }
         }   
 
-        public async Task AnimateForm(bool show, int ShowState=0) // showstate=0 for edit, 1 for create
+        public async Task AnimateForm(bool show, int ShowState = 0) // showstate=0 for edit, 1 for create
         {
             if (FormColumn == null || FormPanel == null || Results == null)
             {

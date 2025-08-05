@@ -7,9 +7,14 @@ namespace nexus.common.helper
 
     public class NameValueItem
     {
-        private string           mName;   public  string          name   { get { return ( mName ); } }
-        private Object           mValue;  public  Object          value  { get { return ( mValue ); } set { mValue = value; } }
-        private ValueItemStatus  mState;  public  ValueItemStatus state  { get { return ( mState); }  set { mState = value; } }
+        private string mName;
+        public string name { get { return mName; } }
+        
+        private Object mValue;
+        public Object value { get { return mValue; } set { mValue = value; } }
+        
+        private ValueItemStatus mState;
+        public ValueItemStatus state { get { return mState; } set { mState = value; } }
 
 
         public NameValueItem()

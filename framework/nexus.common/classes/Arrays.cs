@@ -8,7 +8,15 @@ namespace nexus.common
     {
 
         [StructLayout(LayoutKind.Explicit, Size = 8)]
-        public struct CVT     {[FieldOffset(0)] public byte cval0; [FieldOffset(1)] public byte cval1; [FieldOffset(2)] public byte cval2; [FieldOffset(3)] public byte cval3; [FieldOffset(0)] public int ival; [FieldOffset(0)] public long lval; }
+        public struct CVT
+        {
+            [FieldOffset(0)] public byte cval0;
+            [FieldOffset(1)] public byte cval1;
+            [FieldOffset(2)] public byte cval2;
+            [FieldOffset(3)] public byte cval3;
+            [FieldOffset(0)] public int ival;
+            [FieldOffset(0)] public long lval;
+        }
         public static CVT cvt = new CVT();
 
         public static StringBuilder str = new StringBuilder("");

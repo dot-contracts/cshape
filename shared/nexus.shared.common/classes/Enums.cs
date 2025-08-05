@@ -15,6 +15,10 @@ using System;
 
 namespace nexus.shared.common
 {
-    public enum UserRoles    {        Admin,        Student    }
+    public enum UserRoles
+    {
+        Admin,
+        Student
+    }
 
 }

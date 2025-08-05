@@ -327,8 +327,14 @@ namespace nexus.common.core
                     if (!props[0]) FO.WriteLine("Local,    " + mLAN.GetSettings());
                     if (!props[1]) FO.WriteLine("Computer, " + mLAN.Computer.GetSettings());
                     if (!props[2]) FO.WriteLine("Venue,    " + mLAN.Venue.GetSettings());
-                    if (mWAN != null) { if (!props[3]) FO.WriteLine("Global,   " + mWAN.GetSettings()); }
-                    if (mMAS != null) { if (!props[4]) FO.WriteLine("Master,   " + mMAS.GetSettings()); }
+                    if (mWAN != null)
+                    {
+                        if (!props[3]) FO.WriteLine("Global,   " + mWAN.GetSettings());
+                    }
+                    if (mMAS != null)
+                    {
+                        if (!props[4]) FO.WriteLine("Master,   " + mMAS.GetSettings());
+                    }
 
                     FI.Close();
                     FO.Close();
