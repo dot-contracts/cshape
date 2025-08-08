@@ -17,6 +17,7 @@ using nexus.common.cache;
 using nexus.common.control;
 using nexus.common.core;
 using nexus.common.dal;
+using nexus.shared.common;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
