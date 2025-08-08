@@ -398,13 +398,14 @@ namespace nexus.common.control
                     break;
 
                 case DropTypes.Date:
-                    //Display = Value;
+                    Display = Value;
                     break;
 
                 case DropTypes.DateTime:
                     break;
 
                 case DropTypes.Time:
+                    Display = Value;
                     break;
 
                 case DropTypes.Option:

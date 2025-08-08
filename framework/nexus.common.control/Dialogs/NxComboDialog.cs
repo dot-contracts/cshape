@@ -47,7 +47,8 @@ namespace nexus.common.control
                     _calendar = new NxCalendar
                     {
                         HorizontalAlignment = HorizontalAlignment.Left,
-                        VerticalAlignment   = VerticalAlignment.Top
+                        VerticalAlignment   = VerticalAlignment.Top,
+                        Value = DateTime.Today.ToString("MMM dd, yyyy")
                     };
                     rootGrid.Children.Add(_calendar);
                     _calendar.OnChanged += _OnChanged;
@@ -57,7 +58,8 @@ namespace nexus.common.control
                     _time = new NxTime
                     {
                         HorizontalAlignment = HorizontalAlignment.Left,
-                        VerticalAlignment    = VerticalAlignment.Top
+                        VerticalAlignment    = VerticalAlignment.Top,
+                        Value = DateTime.Now.ToString("HH:mm")
                     };
                     rootGrid.Children.Add(_time);
                     _time.OnChanged += _OnChanged;

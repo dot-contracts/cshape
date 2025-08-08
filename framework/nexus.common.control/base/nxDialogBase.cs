@@ -98,10 +98,14 @@ namespace nexus.common.control
             if (_popup.XamlRoot == null)
                 _popup.XamlRoot = root.XamlRoot;
 
-            root.Measure(new Size(double.PositiveInfinity, double.PositiveInfinity));
-
+            // Measure the container to get proper size
+            _container.Measure(new Size(double.PositiveInfinity, double.PositiveInfinity));
+            
             double windowHeight = root.ActualHeight;
             double windowWidth = root.ActualWidth;
+
+            double containerHeight = _container.DesiredSize.Height;
+            double containerWidth = _container.DesiredSize.Width;
 
             double spaceBelow = windowHeight - (anchor.Y + anchor.Height) - 32;
             double spaceAbove = anchor.Y - 32;
@@ -110,7 +114,27 @@ namespace nexus.common.control
             _scrollViewer.MaxHeight = maxAvailableHeight;
 
             double targetX = anchor.X;
-            double targetY = (spaceBelow >= 200) ? (anchor.Y + anchor.Height + 4) : (anchor.Y - _container.DesiredSize.Height - 4);
+            double targetY;
+            
+            // Position below if there's enough space, otherwise above
+            if (spaceBelow >= containerHeight || spaceBelow >= spaceAbove)
+            {
+                targetY = anchor.Y + anchor.Height + 4;
+            }
+            else
+            {
+                targetY = anchor.Y - containerHeight - 4;
+            }
+
+            // Ensure the dialog stays within screen bounds
+            if (targetX + containerWidth > windowWidth)
+                targetX = windowWidth - containerWidth - 10;
+            if (targetX < 0)
+                targetX = 10;
+
+            System.Diagnostics.Debug.WriteLine($"[DEBUG] ShowBelow - Anchor: ({anchor.X}, {anchor.Y}, {anchor.Width}, {anchor.Height})");
+            System.Diagnostics.Debug.WriteLine($"[DEBUG] ShowBelow - Target: ({targetX}, {targetY})");
+            System.Diagnostics.Debug.WriteLine($"[DEBUG] ShowBelow - Container Size: ({containerWidth}, {containerHeight})");
 
             _popup.HorizontalOffset = targetX;
             _popup.VerticalOffset = targetY;
