@@ -48,7 +48,7 @@ namespace nexus.common.control
                     {
                         HorizontalAlignment = HorizontalAlignment.Left,
                         VerticalAlignment   = VerticalAlignment.Top,
-                        Value = DateTime.Today.ToString("MMM dd, yyyy")
+                        Value = DateTime.Today
                     };
                     rootGrid.Children.Add(_calendar);
                     _calendar.OnChanged += _OnChanged;
