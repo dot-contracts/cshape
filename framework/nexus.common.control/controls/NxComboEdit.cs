@@ -178,6 +178,7 @@ namespace nexus.common.control
         protected override void OnApplyTemplate()
         {
             base.OnApplyTemplate();
+            System.Diagnostics.Debug.WriteLine($"[DEBUG] OnApplyTemplate called for NxComboEdit");
 
             if (Editor != null)
             {
@@ -195,7 +196,12 @@ namespace nexus.common.control
 
             if (Button != null)
             {
+                System.Diagnostics.Debug.WriteLine($"[DEBUG] Button found and event handler attached");
                 Button.OnClicked += Button_OnClick;
+            }
+            else 
+            {
+                System.Diagnostics.Debug.WriteLine($"[DEBUG] ERROR: Button is NULL in OnApplyTemplate!");
             }
 
             Resize();
@@ -231,7 +237,10 @@ namespace nexus.common.control
             { }
         }
 
-        private void Button_OnClick          (string Tag) { if (!IsReadOnly) ShowDrop();  }
+        private void Button_OnClick          (string Tag) { 
+            System.Diagnostics.Debug.WriteLine($"[DEBUG] Button clicked! Tag: {Tag}, IsReadOnly: {IsReadOnly}, DropType: {cb.DropType}");
+            if (!IsReadOnly) ShowDrop();  
+        }
 
         private void Editor_PreviewKeyUp(object sender, KeyRoutedEventArgs e)
         {
@@ -276,6 +285,7 @@ namespace nexus.common.control
 
         private void ShowDrop()
         {
+            System.Diagnostics.Debug.WriteLine($"[DEBUG] ShowDrop called! DropShown: {cb.DropShown}, DropType: {cb.DropType}");
             if (cb.DropShown) cb.HideDrop();
 
             if (LoadlistOnDemand)
