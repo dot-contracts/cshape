@@ -147,8 +147,8 @@ namespace nexus.common.control
 
         public void RaiseOnChanged(string Value)
         {
-            //var rect = dialoghelpers.ScreenRect(this);
-            //OnChanged?.Invoke(this, new ChangedEventArgs(Tag?.ToString() ?? Name, Value, Value, rect));
+            var rect = new Windows.Foundation.Rect(0, 0, 0, 0); // Default empty rect for dialog
+            OnChanged?.Invoke(this, new ChangedEventArgs(Tag?.ToString() ?? "", Value, Value, rect));
         }
 
         private void UpdateContentPadding()

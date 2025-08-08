@@ -54,8 +54,8 @@
                                                     ReplyRequiredText           = "{TemplateBinding ReplyRequiredText}"
                                                     ReplyHorizontalAlignment    = "{TemplateBinding ReplyHorizontalAlignment}"
                                                     ReplyVerticalAlignment      = "{TemplateBinding ReplyVerticalAlignment}"                                                  
-                                                    VerticalAlignment           = "{TemplateBinding ReplyVerticalAlignment}"
-                                                    VerticalContentAlignment   = "{TemplateBinding ReplyVerticalAlignment}"
+                                                    VerticalAlignment           = "Center"
+                                                    VerticalContentAlignment    = "Center"
                                                     MaskType                    = "{TemplateBinding MaskType}" 
                                                     Mask                        = "{TemplateBinding Mask}" 
                                                     IsReadOnly                  = "{TemplateBinding IsReadOnly}"
@@ -71,6 +71,7 @@
                                     <local:NxImage  x:Name    ="button"
                                                     Picture   ="search"   
                                                     Width     ="32"
+                                                    VerticalAlignment="Center"
                                     />
 
 
