@@ -97,10 +97,10 @@ namespace nexus.common.control
         public static readonly DependencyProperty AccentProperty        = DependencyProperty.Register(nameof(Accent),        typeof(Brush), typeof(NxControlBase), new PropertyMetadata(default(Brush)));
 
         protected Brush ButtonFore        { get => (Brush)GetValue(ButtonForeProperty);        set => SetThemeBrush(ButtonForeProperty,        value); }
-        protected Brush ButtonBack        { get => (Brush)GetValue(ButtonBackProperty);        set => SetThemeBrush(ButtonBackProperty,        value); }
+        public Brush ButtonBack        { get => (Brush)GetValue(ButtonBackProperty);        set => SetThemeBrush(ButtonBackProperty,        value); }
         protected Brush ButtonPointerOver { get => (Brush)GetValue(ButtonPointerOverProperty); set => SetThemeBrush(ButtonPointerOverProperty, value); }
         protected Brush ButtonPressed     { get => (Brush)GetValue(ButtonPressedProperty);     set => SetThemeBrush(ButtonPressedProperty,     value); }
-        protected Brush PromptBack        { get => (Brush)GetValue(PromptBackProperty);        set => SetThemeBrush(PromptBackProperty, value); }
+        public Brush PromptBack        { get => (Brush)GetValue(PromptBackProperty);        set => SetThemeBrush(PromptBackProperty, value); }
         protected Brush PromptFore        { get => (Brush)GetValue(PromptForeProperty);        set => SetThemeBrush(PromptForeProperty, value); }
         protected Brush ReplyBack         { get => (Brush)GetValue(ReplyBackProperty);         set => SetThemeBrush(ReplyBackProperty,  value); }
         protected Brush ReplyFore         { get => (Brush)GetValue(ReplyForeProperty);         set => SetThemeBrush(ReplyForeProperty,  value); }
@@ -110,7 +110,7 @@ namespace nexus.common.control
         protected Brush MenuFore          { get => (Brush)GetValue(MenuForeProperty);          set => SetThemeBrush(MenuForeProperty,   value); }
         protected Brush MenuBack          { get => (Brush)GetValue(MenuBackProperty);          set => SetThemeBrush(MenuBackProperty,   value); }
         protected Brush Border            { get => (Brush)GetValue(BorderProperty);            set => SetThemeBrush(BorderProperty,     value); }
-        protected Brush Accent            { get => (Brush)GetValue(AccentProperty);            set => SetThemeBrush(AccentProperty,     value); }
+        public Brush Accent            { get => (Brush)GetValue(AccentProperty);            set => SetThemeBrush(AccentProperty,     value); }
 
         public event Action<NxTheme>                 OnThemeChange;
         public event EventHandler<object>?           PreviewMouseDown;
