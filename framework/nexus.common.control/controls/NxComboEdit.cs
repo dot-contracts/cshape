@@ -175,7 +175,7 @@ namespace nexus.common.control
 
         #region Override Methods
 
-        public void OnApplyTemplate()
+        protected override void OnApplyTemplate()
         {
             base.OnApplyTemplate();
 
